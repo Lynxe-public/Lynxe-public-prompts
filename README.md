@@ -6,29 +6,24 @@
 
 ## 用例概览
 
-### 📊 基础查询类
+### ⭐ 高频推荐
 
-#### 1. 股票价格查询
-- **文件位置**: [chn/stock-price-query.md](chn/stock-price-query.md) | [eng/stock-price-query.md](eng/stock-price-query.md)
-- **功能描述**: 展示系统默认的浏览器工具功能，支持Simple模式和Func-Agent增强模式
-- **核心特性**: 
-  - 简单聊天框查询
-  - 可变参数查询不同公司股价
-  - 详细的执行过程展示
-- **适用场景**: 金融信息查询、股价监控
+（待补充）
 
-#### 2. IP查询
-- **文件位置**: [chn/ip-query.md](chn/ip-query.md) | [eng/ip-query.md](eng/ip-query.md)
-- **功能描述**: 展示MCP服务集成方法，通过外部服务扩展系统功能
+### 📋 场景化功能说明
+
+#### 1. AI小说
+- **文件位置**: [chn/ai-novel.md](chn/ai-novel.md) | [eng/ai-novel.md](eng/ai-novel.md)
+- **功能描述**: 展示长内容一体化输出和function-agent实现，通过分而治之策略完成长篇内容创作，支持批量生产长文章
 - **核心特性**:
-  - MCP服务配置和管理
-  - SSE连接方式
-  - 外部服务调用
-- **适用场景**: 网络信息查询、IP定位服务
+  - 长内容一体化输出：突破上下文限制，实现连贯的长篇内容生成
+  - Function-agent实现：智能任务分解和工具函数组合，体现"函数是第一公民"理念
+  - 批量生产长文章：支持章节化写作流程，可重复用于不同主题的长文创作
+  - 分而治之策略：将复杂创作任务分解为可管理的章节单元
+  - 内容连贯性保证：确保各章节间的逻辑一致性和风格统一
+- **适用场景**: 内容创作、创意写作、批量文章生产、长篇文档生成
 
-### 🔧 高级功能类
-
-#### 3. 表单输入演示
+#### 2. 表单输入演示
 - **文件位置**: [chn/form-input-demo.md](chn/form-input-demo.md) | [eng/form-input-demo.md](eng/form-input-demo.md)
 - **功能描述**: 展示用户交互等待机制和登录状态保持功能
 - **核心特性**:
@@ -36,6 +31,18 @@
   - 异步用户交互处理
   - 浏览器会话状态保持
 - **适用场景**: 需要用户登录的网站操作、交互式工作流
+
+#### 3. 图片和PDF识别
+- **文件位置**: [chn/image-pdf-recognition.md](chn/image-pdf-recognition.md) | [eng/image-pdf-recognition.md](eng/image-pdf-recognition.md)
+- **功能描述**: 展示图片和PDF识别功能，支持批量识别和结构化输出，同时支持HTTP接口调用
+- **核心特性**:
+  - 文档解析和OCR技术
+  - 结构化数据提取
+  - HTTP服务发布和调用
+  - 文件上传和批量处理
+  - 异步任务执行
+  - JSON格式标准化输出
+- **适用场景**: 文档处理、内容提取、批量识别、API服务
 
 #### 4. 函数化Agent
 - **文件位置**: [chn/query-plan.md](chn/query-plan.md) | [eng/query-plan.md](eng/query-plan.md)
@@ -49,28 +56,27 @@
   - 智能调研策略：自动选择最佳调研路径和资源
 - **适用场景**: 深度调研、学术研究、信息收集、智能分析
 
-#### 5. 图片和PDF识别
-- **文件位置**: [chn/image-pdf-recognition.md](chn/image-pdf-recognition.md) | [eng/image-pdf-recognition.md](eng/image-pdf-recognition.md)
-- **功能描述**: 展示图片和PDF识别功能，支持批量识别和结构化输出，同时支持HTTP接口调用
-- **核心特性**:
-  - 文档解析和OCR技术
-  - 结构化数据提取
-  - HTTP服务发布和调用
-  - 文件上传和批量处理
-  - 异步任务执行
-  - JSON格式标准化输出
-- **适用场景**: 文档处理、内容提取、批量识别、API服务
+#### 5. 股票价格查询
+- **文件位置**: [chn/stock-price-query.md](chn/stock-price-query.md) | [eng/stock-price-query.md](eng/stock-price-query.md)
+- **功能描述**: 展示系统默认的浏览器工具功能，支持Simple模式和Func-Agent增强模式
+- **核心特性**: 
+  - 简单聊天框查询
+  - 可变参数查询不同公司股价
+  - 详细的执行过程展示
+- **适用场景**: 金融信息查询、股价监控
 
-#### 6. AI小说
-- **文件位置**: [chn/ai-novel.md](chn/ai-novel.md) | [eng/ai-novel.md](eng/ai-novel.md)
-- **功能描述**: 展示长内容一体化输出和function-agent实现，通过分而治之策略完成长篇内容创作，支持批量生产长文章
+### 🔧 复杂场景Demo
+
+#### 1. 小红书搜索抓取
+- **文件位置**: [chn/xiaohongshu-scraper.md](chn/xiaohongshu-scraper.md) | [eng/xiaohongshu-scraper.md](eng/xiaohongshu-scraper.md)
+- **功能描述**: 展示如何使用浏览器工具、数据库工具和并发工具，实现网站搜索抓取并存储到数据库的完整流程
 - **核心特性**:
-  - 长内容一体化输出：突破上下文限制，实现连贯的长篇内容生成
-  - Function-agent实现：智能任务分解和工具函数组合，体现"函数是第一公民"理念
-  - 批量生产长文章：支持章节化写作流程，可重复用于不同主题的长文创作
-  - 分而治之策略：将复杂创作任务分解为可管理的章节单元
-  - 内容连贯性保证：确保各章节间的逻辑一致性和风格统一
-- **适用场景**: 内容创作、创意写作、批量文章生产、长篇文档生成
+  - 浏览器自动化：打开网站、搜索关键词、获取页面内容
+  - 数据库操作：创建表结构、查询和存储数据
+  - 并发处理：并行抓取多个链接内容
+  - 用户交互等待：登录状态的处理和保持
+  - 数据去重：自动检测并更新已有数据
+- **适用场景**: 网站数据抓取、内容采集、信息监控、数据存储
 
 ## 技术架构
 
@@ -88,6 +94,7 @@
 - ✅ 用户交互等待
 - ✅ 函数发布和复用
 - ✅ 深度调研搜索
+- ✅ 网站数据抓取和存储
 
 ## 快速开始
 
@@ -104,18 +111,18 @@ public-usecase/
 ├── README_EN.md                # 英文版项目总览
 ├── chn/                        # 中文版用例文档
 │   ├── stock-price-query.md    # 股票价格查询
-│   ├── ip-query.md            # IP查询
 │   ├── form-input-demo.md     # 表单输入演示
 │   ├── query-plan.md          # 函数化Agent
 │   ├── image-pdf-recognition.md # 图片和PDF识别
-│   └── ai-novel.md           # AI小说
+│   ├── ai-novel.md           # AI小说
+│   └── xiaohongshu-scraper.md # 小红书搜索抓取
 └── eng/                       # 英文版用例文档
     ├── stock-price-query.md   # Stock Price Query
-    ├── ip-query.md           # IP Query
     ├── form-input-demo.md    # Form Input Demo
     ├── query-plan.md         # Functional Agent
     ├── image-pdf-recognition.md # Image and PDF Recognition
-    └── ai-novel.md          # AI Novel
+    ├── ai-novel.md          # AI Novel
+    └── xiaohongshu-scraper.md # Xiaohongshu Search Scraping
 ```
 
 ## 贡献指南

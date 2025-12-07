@@ -6,29 +6,24 @@ This project contains a collection of practical use cases that demonstrate the c
 
 ## Use Cases Overview
 
-### 📊 Basic Query Cases
+### ⭐ Highly Recommended
 
-#### 1. Stock Price Query
-- **File Location**: [chn/stock-price-query.md](chn/stock-price-query.md) | [eng/stock-price-query.md](eng/stock-price-query.md)
-- **Description**: Demonstrates the system's default browser tool functionality, supporting both Simple mode and Func-Agent enhanced mode
-- **Key Features**: 
-  - Simple chat interface query
-  - Variable parameter query for different company stock prices
-  - Detailed execution process display
-- **Use Cases**: Financial information query, stock price monitoring
+(To be added)
 
-#### 2. IP Query
-- **File Location**: [chn/ip-query.md](chn/ip-query.md) | [eng/ip-query.md](eng/ip-query.md)
-- **Description**: Demonstrates MCP service integration methods to extend system functionality through external services
+### 📋 Scenario-based Feature Descriptions
+
+#### 1. AI Novel
+- **File Location**: [chn/ai-novel.md](chn/ai-novel.md) | [eng/ai-novel.md](eng/ai-novel.md)
+- **Description**: Demonstrates integrated output of long-form content and function-agent implementation, completing long-form content creation through divide-and-conquer strategy, supporting batch production of long articles
 - **Key Features**:
-  - MCP service configuration and management
-  - SSE connection method
-  - External service invocation
-- **Use Cases**: Network information query, IP location services
+  - Integrated long-form content output: Breaking through context limitations to achieve coherent long-form content generation
+  - Function-agent implementation: Intelligent task decomposition and tool function composition, embodying "functions as first-class citizens" philosophy
+  - Batch production of long articles: Supporting chapter-based writing workflow, reusable for long-form content creation on different topics
+  - Divide-and-conquer strategy: Decomposing complex creation tasks into manageable chapter units
+  - Content coherence assurance: Ensuring logical consistency and style uniformity between chapters
+- **Use Cases**: Content creation, creative writing, batch article production, long-form document generation
 
-### 🔧 Advanced Feature Cases
-
-#### 3. Form Input Demo
+#### 2. Form Input Demo
 - **File Location**: [chn/form-input-demo.md](chn/form-input-demo.md) | [eng/form-input-demo.md](eng/form-input-demo.md)
 - **Description**: Demonstrates user interaction waiting mechanisms and login state persistence functionality
 - **Key Features**:
@@ -36,6 +31,18 @@ This project contains a collection of practical use cases that demonstrate the c
   - Asynchronous user interaction handling
   - Browser session state maintenance
 - **Use Cases**: Website operations requiring user login, interactive workflows
+
+#### 3. Image and PDF Recognition
+- **File Location**: [chn/image-pdf-recognition.md](chn/image-pdf-recognition.md) | [eng/image-pdf-recognition.md](eng/image-pdf-recognition.md)
+- **Description**: Demonstrates image and PDF recognition functionality, supporting batch recognition and structured output, as well as HTTP API calls
+- **Key Features**:
+  - Document parsing and OCR technology
+  - Structured data extraction
+  - HTTP service publishing and calling
+  - File upload and batch processing
+  - Asynchronous task execution
+  - JSON format standardized output
+- **Use Cases**: Document processing, content extraction, batch recognition, API services
 
 #### 4. Functional Agent
 - **File Location**: [chn/query-plan.md](chn/query-plan.md) | [eng/query-plan.md](eng/query-plan.md)
@@ -49,28 +56,27 @@ This project contains a collection of practical use cases that demonstrate the c
   - Intelligent research strategy: Automatic selection of optimal research paths and resources
 - **Use Cases**: Deep research, academic research, information gathering, intelligent analysis
 
-#### 5. Image and PDF Recognition
-- **File Location**: [chn/image-pdf-recognition.md](chn/image-pdf-recognition.md) | [eng/image-pdf-recognition.md](eng/image-pdf-recognition.md)
-- **Description**: Demonstrates image and PDF recognition functionality, supporting batch recognition and structured output, as well as HTTP API calls
-- **Key Features**:
-  - Document parsing and OCR technology
-  - Structured data extraction
-  - HTTP service publishing and calling
-  - File upload and batch processing
-  - Asynchronous task execution
-  - JSON format standardized output
-- **Use Cases**: Document processing, content extraction, batch recognition, API services
+#### 5. Stock Price Query
+- **File Location**: [chn/stock-price-query.md](chn/stock-price-query.md) | [eng/stock-price-query.md](eng/stock-price-query.md)
+- **Description**: Demonstrates the system's default browser tool functionality, supporting both Simple mode and Func-Agent enhanced mode
+- **Key Features**: 
+  - Simple chat interface query
+  - Variable parameter query for different company stock prices
+  - Detailed execution process display
+- **Use Cases**: Financial information query, stock price monitoring
 
-#### 6. AI Novel
-- **File Location**: [chn/ai-novel.md](chn/ai-novel.md) | [eng/ai-novel.md](eng/ai-novel.md)
-- **Description**: Demonstrates integrated output of long-form content and function-agent implementation, completing long-form content creation through divide-and-conquer strategy, supporting batch production of long articles
+### 🔧 Complex Scenario Demos
+
+#### 1. Xiaohongshu Search Scraping
+- **File Location**: [chn/xiaohongshu-scraper.md](chn/xiaohongshu-scraper.md) | [eng/xiaohongshu-scraper.md](eng/xiaohongshu-scraper.md)
+- **Description**: Demonstrates how to use browser tools, database tools, and parallel execution tools to implement a complete workflow for website search scraping and data storage
 - **Key Features**:
-  - Integrated long-form content output: Breaking through context limitations to achieve coherent long-form content generation
-  - Function-agent implementation: Intelligent task decomposition and tool function composition, embodying "functions as first-class citizens" philosophy
-  - Batch production of long articles: Supporting chapter-based writing workflow, reusable for long-form content creation on different topics
-  - Divide-and-conquer strategy: Decomposing complex creation tasks into manageable chapter units
-  - Content coherence assurance: Ensuring logical consistency and style uniformity between chapters
-- **Use Cases**: Content creation, creative writing, batch article production, long-form document generation
+  - Browser automation: Open websites, search keywords, retrieve page content
+  - Database operations: Create table structures, query and store data
+  - Parallel processing: Scrape multiple links concurrently
+  - User interaction waiting: Handle and maintain login state
+  - Data deduplication: Automatically detect and update existing data
+- **Use Cases**: Website data scraping, content collection, information monitoring, data storage
 
 ## Technical Architecture
 
@@ -88,6 +94,7 @@ This project contains a collection of practical use cases that demonstrate the c
 - ✅ User interaction waiting
 - ✅ Function publication and reuse
 - ✅ Deep research search
+- ✅ Website data scraping and storage
 
 ## Quick Start
 
@@ -104,18 +111,18 @@ public-usecase/
 ├── README_EN.md                # Project overview (English)
 ├── chn/                        # Chinese version use case docs
 │   ├── stock-price-query.md    # Stock Price Query
-│   ├── ip-query.md            # IP Query
 │   ├── form-input-demo.md     # Form Input Demo
 │   ├── query-plan.md          # Functional Agent
 │   ├── image-pdf-recognition.md # Image and PDF Recognition
-│   └── ai-novel.md           # AI Novel
+│   ├── ai-novel.md           # AI Novel
+│   └── xiaohongshu-scraper.md # Xiaohongshu Search Scraping
 └── eng/                       # English version use case docs
     ├── stock-price-query.md   # Stock Price Query
-    ├── ip-query.md           # IP Query
     ├── form-input-demo.md    # Form Input Demo
     ├── query-plan.md         # Functional Agent
     ├── image-pdf-recognition.md # Image and PDF Recognition
-    └── ai-novel.md          # AI Novel
+    ├── ai-novel.md          # AI Novel
+    └── xiaohongshu-scraper.md # Xiaohongshu Search Scraping
 ```
 
 ## Contributing
