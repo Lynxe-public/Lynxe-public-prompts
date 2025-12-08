@@ -1,0 +1,156 @@
+[
+  {
+    "title": "第二步创建一个临时展示用的库，也只需要做一次",
+    "steps": [
+      {
+        "stepRequirement": "请查询一下 是否存在一个叫 crawl_data的表。如果不存在就创建一个，如果存在但表结构不符合要求，就更新。\n表里的列要求是（请都使用英文列名）：\nid（主键,long 自增，数字）,\ncategory(字符串200个字符够了）,\ntitle(标题，要text，足够大)，\ndetails(详情，要text，足够大）\n\n\n我的数据库目前是h2",
+        "agentName": "",
+        "modelName": "",
+        "terminateColumns": "",
+        "selectedToolKeys": [
+          "database-service-group_database_metadata_use"
+        ]
+      }
+    ],
+    "planType": "dynamic_agent",
+    "serviceGroup": "网站关键信息爬取",
+    "toolConfig": {
+      "toolDescription": "第二步抓信息并存储到数据库",
+      "enableInternalToolcall": true,
+      "enableHttpService": false,
+      "enableInConversation": false,
+      "publishStatus": "PUBLISHED",
+      "inputSchema": []
+    },
+    "createTime": "2025-12-05T15:26:12.345319",
+    "updateTime": "2025-12-07T10:41:54.320273",
+    "version": "5.0.0",
+    "planTemplateId": "planTemplate-1764919572331",
+    "accessLevel": "editable",
+    "readOnly": false
+  },
+  {
+    "title": "第三步获取特定分类的前10条信息",
+    "steps": [
+      {
+        "stepRequirement": "已知：\n一个小红书的链接 : https://www.xiaohongshu.com\n\n搜索信息： <<搜索信息>> \n\n\n打开小红书的链接，在搜索框输入 搜索信息 ，然后按回车。\n\n然后，获取网站内容到文件。\n\n然后你必须在获取内容以后立即关闭这个小红书链接！然后你必须在获取内容以后立即关闭这个小红书链接！然后你必须在获取内容以后立即关闭这个小红书链接！\n\n\n在关闭连接以后，\n全量的读取 刚才已经保存的网站内容 。 从里面获取全部的有关内容的链接的前10条信息。\n\n然后 以 前10个链接 和 分类作为参数， 以 网站关键信息爬取.私有put一个链接的内容到数据库 作为方法，注册所有的任务到并行工具上。\n\n确认所有链接都注册上去以后，开始执行",
+        "agentName": "",
+        "modelName": "",
+        "terminateColumns": "",
+        "selectedToolKeys": [
+          "default-service-group_browser_use",
+          "default-service-group_global_file_operator",
+          "parallel-execution_parallel_execution_tool",
+          "网站关键信息爬取_私有put一个链接的内容到数据库"
+        ]
+      }
+    ],
+    "planType": "dynamic_agent",
+    "serviceGroup": "网站关键信息爬取",
+    "toolConfig": {
+      "toolDescription": "第三步获取特定分类的前20条信息",
+      "enableInternalToolcall": true,
+      "enableHttpService": false,
+      "enableInConversation": false,
+      "publishStatus": "PUBLISHED",
+      "inputSchema": [
+        {
+          "name": "小红书链接",
+          "description": "Parameter: 小红书链接",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "category",
+          "description": "Parameter: category",
+          "type": "string",
+          "required": true
+        }
+      ]
+    },
+    "createTime": "2025-12-05T16:17:29.966421",
+    "updateTime": "2025-12-07T12:11:52.220375",
+    "version": "5.0.0",
+    "planTemplateId": "planTemplate-1764922649956",
+    "accessLevel": "editable",
+    "readOnly": false
+  },
+  {
+    "title": "第一步需要先做登录,登录只需要做一次",
+    "steps": [
+      {
+        "stepRequirement": "1 浏览器打开小红书 https://www.xiaohongshu.com/explore\n2 如果你认为需要登录，就 调用 表单 等待并让用户输入 ok 来完成登录",
+        "agentName": "",
+        "modelName": "",
+        "terminateColumns": "",
+        "selectedToolKeys": [
+          "default-service-group_browser_use"
+        ]
+      }
+    ],
+    "planType": "dynamic_agent",
+    "serviceGroup": "网站关键信息爬取",
+    "toolConfig": {
+      "toolDescription": "第一步需要先做登录",
+      "enableInternalToolcall": true,
+      "enableHttpService": false,
+      "enableInConversation": false,
+      "publishStatus": "PUBLISHED",
+      "inputSchema": []
+    },
+    "createTime": "2025-12-05T15:22:27.346662",
+    "updateTime": "2025-12-07T10:41:15.903222",
+    "version": "5.0.0",
+    "planTemplateId": "planTemplate-1764919347341",
+    "accessLevel": "editable",
+    "readOnly": false
+  },
+  {
+    "title": "私有put一个链接的内容到数据库",
+    "steps": [
+      {
+        "stepRequirement": "已知：\n一个小红书的链接 : <<小红书链接>>\ncategory : <<分类或搜索词>>\n\ncrawl_data的表的结构：\nid（主键,long 自增，数字）,\ncategory(字符串200个字符够了）,\ntitle(标题，要text，足够大)，\ndetails(详情，要text，足够大）\n\n打开小红书的链接，获取网站内容到文件。\n然后你必须在获取内容以后立即关闭这个小红书链接！然后你必须在获取内容以后立即关闭这个小红书链接！然后你必须在获取内容以后立即关闭这个小红书链接！\n\n\n在关闭连接以后，\n从网站内容文件里 获取 这个文章的标题 和 内容 \n\n\n然后，先用 标题 去 查询一下当前的 crawl_data 里面有没有既有的数据 。 如果没有数据就写入数据。 有的话就更新数据.\n\n内容的更新要求：\n只写入作者要表达的关键信息，不要存入yaml格式的内容",
+        "agentName": "",
+        "modelName": "",
+        "terminateColumns": "影响行数,错误原因(可选，如有)",
+        "selectedToolKeys": [
+          "database-service-group_database_read_use",
+          "database-service-group_database_write_use",
+          "database-service-group_uuid_generate",
+          "database-service-group_database_metadata_use",
+          "default-service-group_browser_use",
+          "default-service-group_global_file_operator"
+        ]
+      }
+    ],
+    "planType": "dynamic_agent",
+    "serviceGroup": "网站关键信息爬取",
+    "toolConfig": {
+      "toolDescription": "私有put",
+      "enableInternalToolcall": true,
+      "enableHttpService": false,
+      "enableInConversation": false,
+      "publishStatus": "PUBLISHED",
+      "inputSchema": [
+        {
+          "name": "小红书链接",
+          "description": "小红书链接",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "分类或搜索词",
+          "description": "分类或搜索词 如果是搜索任务就写搜索词，如果是既有分类的，就用分类词",
+          "type": "string",
+          "required": true
+        }
+      ]
+    },
+    "createTime": "2025-12-05T15:36:42.244633",
+    "updateTime": "2025-12-07T16:31:06.581748",
+    "version": "5.0.0",
+    "planTemplateId": "planTemplate-1764920202234",
+    "accessLevel": "editable",
+    "readOnly": false
+  }
+]

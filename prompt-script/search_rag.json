@@ -1,0 +1,40 @@
+[
+  {
+    "title": "用bing搜索并快速回答问题",
+    "steps": [
+      {
+        "stepRequirement": "请基于用户问题 ： <<用户问题>>\n\n构造搜索词， 用bingcn_bingcn_bing_search做搜索，搜索需要前10个结果。\n\n将前3个你认为最相关结果的id ，使用 bingcn_bingcn_fetch_webpage去获取网页内容。\n综合所有网页结果，回答用户问题",
+        "agentName": "",
+        "modelName": "",
+        "terminateColumns": "",
+        "selectedToolKeys": [
+          "EnhancedBing_EnhancedBing_bing_search",
+          "EnhancedBing_EnhancedBing_fetch_webpage"
+        ]
+      }
+    ],
+    "planType": "dynamic_agent",
+    "serviceGroup": "search_rag",
+    "toolConfig": {
+      "toolDescription": "用bing搜索并快速回答问题",
+      "enableInternalToolcall": true,
+      "enableHttpService": false,
+      "enableInConversation": true,
+      "publishStatus": "PUBLISHED",
+      "inputSchema": [
+        {
+          "name": "用户问题",
+          "description": "Parameter: 用户问题",
+          "type": "string",
+          "required": true
+        }
+      ]
+    },
+    "createTime": "2025-12-07T19:38:05.634859",
+    "updateTime": "2025-12-08T00:37:53.374306",
+    "version": "5.0.0",
+    "planTemplateId": "planTemplate-1765107313068",
+    "accessLevel": "editable",
+    "readOnly": false
+  }
+]
