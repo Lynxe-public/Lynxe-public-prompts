@@ -10,7 +10,7 @@ You can learn from this how to create multiple specialized function tools, how t
 
 **Version Requirement**: 4.8.6 and above
 
-**Step 1** Open the Lynxe system
+**Step 1** [Open the Lynxe system](https://github.com/spring-ai-alibaba/Lynxe)
 
 **Step 2** Import data
 - Import the plan template from the [prompt-script/ai_novel_demo.json](../prompt-script/ai_novel_demo.json) file

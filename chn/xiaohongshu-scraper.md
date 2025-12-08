@@ -10,7 +10,7 @@
 
 **版本要求**: 4.8.6（含）以上
 
-**第1步** 打开Lynxe系统
+**第1步** [打开Lynxe系统](https://github.com/spring-ai-alibaba/Lynxe)
 
 **第2步** 配置数据库
 - 确保数据库服务已正确配置

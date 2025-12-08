@@ -12,7 +12,7 @@ In this example, the technical expert, database expert, and business expert corr
 
 **Version Requirement**: 4.8.6 and above
 
-**Step 1** Open the Lynxe system
+**Step 1** [Open the Lynxe system](https://github.com/spring-ai-alibaba/Lynxe)
 
 **Step 2** Import data
 - Import the plan template from the [prompt-script/func-agent-example.json](../prompt-script/func-agent-example.json) file

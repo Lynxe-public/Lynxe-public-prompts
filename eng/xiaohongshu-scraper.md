@@ -10,7 +10,7 @@ You can learn from this example how to use browser tools, database tools, and pa
 
 **Version Requirement**: 4.8.6 or higher
 
-**Step 1** Open Lynxe system
+**Step 1** [Open Lynxe system](https://github.com/spring-ai-alibaba/Lynxe)
 
 **Step 2** Configure database
 - Ensure database service is properly configured

@@ -8,7 +8,7 @@ This feature can be used directly in the chat dialog, making it simple and conve
 
 ## Usage Process
 
-**Step 1** Open Lynxe system
+**Step 1** [Open Lynxe system](https://github.com/spring-ai-alibaba/Lynxe)
 
 **Step 2** Import MCP service
 - Visit `https://modelscope.cn/mcp/servers/rainerWJY/bing-cn-mcp-enhanced`

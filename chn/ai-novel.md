@@ -10,7 +10,7 @@
 
 **版本要求**: 4.8.6（含）以上
 
-**第1步** 打开Lynxe系统
+**第1步** [打开Lynxe系统](https://github.com/spring-ai-alibaba/Lynxe)
 
 **第2步** 导入数据
 - 导入 [prompt-script/ai_novel_demo.json](../prompt-script/ai_novel_demo.json) 文件中的计划模板

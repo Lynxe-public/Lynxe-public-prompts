@@ -8,7 +8,7 @@
 
 ## 使用流程
 
-**第1步** 打开Lynxe系统
+**第1步** [打开Lynxe系统](https://github.com/spring-ai-alibaba/Lynxe)
 
 **第2步** 导入MCP服务
 - 访问 `https://modelscope.cn/mcp/servers/rainerWJY/bing-cn-mcp-enhanced`
