@@ -15,7 +15,7 @@ In this example, the technical expert, database expert, and business expert corr
 **Step 1** Open the Lynxe system
 
 **Step 2** Import data
-- Import the plan template from the [prompt-script/func-agent-example.json](prompt-script/func-agent-example.json) file
+- Import the plan template from the [prompt-script/func-agent-example.json](../prompt-script/func-agent-example.json) file
 - The system will automatically identify and load all function Agents
 
 **Step 3** Understand the function structure

@@ -18,7 +18,7 @@ You can learn from this example how to use browser tools, database tools, and pa
 - For detailed configuration steps, please refer to: [Database Configuration](common/database-config.md)
 
 **Step 3** Import data
-- Import the plan templates from [prompt-script/xiaohongshu-scraper.json](prompt-script/xiaohongshu-scraper.json) file
+- Import the plan templates from [prompt-script/xiaohongshu-scraper.json](../prompt-script/xiaohongshu-scraper.json) file
 - System will automatically recognize and load all steps
 
 **Step 4** Execute initialization steps

@@ -16,7 +16,7 @@ This feature can be used directly in the chat dialog, making it simple and conve
 - Follow the instructions in [MCP Service Configuration](common/mcp-config.md) to import the configuration information into Lynxe's MCP configuration
 
 **Step 3** Import plan template
-- Import the plan template content from [prompt-script/search_rag.json](prompt-script/search_rag.json) file
+- Import the plan template content from [prompt-script/search_rag.json](../prompt-script/search_rag.json) file
 - The system will automatically recognize and load the template configuration
 
 **Step 4** Update service status

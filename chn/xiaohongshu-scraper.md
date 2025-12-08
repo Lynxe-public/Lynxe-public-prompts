@@ -18,7 +18,7 @@
 - 详细配置步骤请参考：[数据库配置](common/database-config.md)
 
 **第3步** 导入数据
-- 导入 [prompt-script/xiaohongshu-scraper.json](prompt-script/xiaohongshu-scraper.json) 文件中的计划模板
+- 导入 [prompt-script/xiaohongshu-scraper.json](../prompt-script/xiaohongshu-scraper.json) 文件中的计划模板
 - 系统会自动识别并加载所有步骤
 
 **第4步** 执行初始化步骤
