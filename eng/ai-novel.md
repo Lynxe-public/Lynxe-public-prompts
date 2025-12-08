@@ -13,7 +13,7 @@ You can learn from this how to create multiple specialized function tools, how t
 **Step 1** Open the Lynxe system
 
 **Step 2** Import data
-- Import the plan template from the `prompt-script/ai_novel_demo.json` file
+- Import the plan template from the [prompt-script/ai_novel_demo.json](prompt-script/ai_novel_demo.json) file
 - The system will automatically identify and load all function Agents
 
 **Step 3** Understand the function structure

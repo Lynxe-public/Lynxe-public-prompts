@@ -18,6 +18,8 @@ This project contains a collection of practical use cases that demonstrate the c
   - Intelligent Q&A based on search results
 - **Use Cases**: Information search, intelligent Q&A, real-time information query
 
+---
+
 ### Product Feature Introduction - Must-Try Tools
 
 #### Function-Agent Example
@@ -60,6 +62,8 @@ This project contains a collection of practical use cases that demonstrate the c
   - Divide-and-conquer strategy: Decomposing complex creation tasks into manageable chapter units
   - Content coherence assurance: Ensuring logical consistency and style uniformity between chapters
 - **Use Cases**: Content creation, creative writing, batch article production, long-form document generation
+
+---
 
 ### 📋 Scenario-based Case Library
 

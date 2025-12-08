@@ -16,7 +16,7 @@
 - 按照 [MCP服务配置](common/mcp-config.md) 的说明，将配置信息导入到Lynxe的MCP配置中
 
 **第3步** 导入计划模板
-- 导入 `prompt-script/search_rag.json` 文件中的计划模板内容
+- 导入 [prompt-script/search_rag.json](prompt-script/search_rag.json) 文件中的计划模板内容
 - 系统会自动识别并加载模板配置
 
 **第4步** 更新服务状态

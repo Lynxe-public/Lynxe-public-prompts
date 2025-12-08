@@ -15,7 +15,7 @@
 **第1步** 打开Lynxe系统
 
 **第2步** 导入数据
-- 导入 `prompt-script/func-agent-example.json` 文件中的计划模板
+- 导入 [prompt-script/func-agent-example.json](prompt-script/func-agent-example.json) 文件中的计划模板
 - 系统会自动识别并加载所有函数Agent
 
 **第3步** 理解函数结构
