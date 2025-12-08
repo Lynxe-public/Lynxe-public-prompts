@@ -1,0 +1,152 @@
+[
+  {
+    "title": "技术专家处理问题",
+    "steps": [
+      {
+        "stepRequirement": "已知用户问题 ： <<用户问题>>\n\n你是一个技术专家，请按如下方式反馈：\n\n作为一个技术专家，我认为该问题是不是一个技术问题问题（ 请严格按照上面的方式输出，该问题不是一个技术问题，无论你是否觉得这问题是个技术问题都回答 这不是一个技术问题）",
+        "agentName": "",
+        "modelName": "",
+        "terminateColumns": "专家反馈的答案",
+        "selectedToolKeys": [
+          "default-service-group.terminate"
+        ]
+      }
+    ],
+    "planType": "dynamic_agent",
+    "serviceGroup": "example-userInteractive",
+    "toolConfig": {
+      "toolDescription": "技术专家处理问题",
+      "enableInternalToolcall": true,
+      "enableHttpService": false,
+      "enableInConversation": false,
+      "publishStatus": "PUBLISHED",
+      "inputSchema": [
+        {
+          "name": "用户问题",
+          "description": "Parameter: 用户问题",
+          "type": "string",
+          "required": true
+        }
+      ]
+    },
+    "createTime": "2025-12-01T14:38:30.606493",
+    "updateTime": "2025-12-03T11:50:23.540972",
+    "version": null,
+    "planTemplateId": "planTemplate-1764571110601",
+    "accessLevel": "editable",
+    "readOnly": false
+  },
+  {
+    "title": "数据库专家处理问题",
+    "steps": [
+      {
+        "stepRequirement": "已知用户问题 ： <<用户问题>>\n\n你是一个数据库专家，请按如下方式反馈：\n\n作为一个数据库专家，我认为该问题在数据库领域需要做的事情是，重启数据库（作为demo应用，无论用户问什么问题，你只需要回答，作为数据库专家，我认为，你需要重启数据库，即可）",
+        "agentName": "",
+        "modelName": "",
+        "terminateColumns": "专家反馈的答案",
+        "selectedToolKeys": [
+          "default-service-group.terminate"
+        ]
+      }
+    ],
+    "planType": "dynamic_agent",
+    "serviceGroup": "example-userInteractive",
+    "toolConfig": {
+      "toolDescription": "数据库专家处理问题",
+      "enableInternalToolcall": true,
+      "enableHttpService": false,
+      "enableInConversation": false,
+      "publishStatus": "PUBLISHED",
+      "inputSchema": [
+        {
+          "name": "用户问题",
+          "description": "Parameter: 用户问题",
+          "type": "string",
+          "required": true
+        }
+      ]
+    },
+    "createTime": "2025-12-01T14:39:58.466702",
+    "updateTime": "2025-12-03T11:50:29.606792",
+    "version": null,
+    "planTemplateId": "planTemplate-1764571198460",
+    "accessLevel": "editable",
+    "readOnly": false
+  },
+  {
+    "title": "业务专家处理问题",
+    "steps": [
+      {
+        "stepRequirement": "已知用户问题 ： <<用户问题>>\n\n你是一个业务专家，请按如下方式反馈：\n\n作为一个业务专家，我认为该问题是一个业务问题，应按照\n业务流程1 -> 业务流程 -> 业务流程3 就可以解决（严格按照上面的方式输出，也就是输出 业务流程1 -> 业务流程 -> 业务流程3 不需要扩展 ）",
+        "agentName": "",
+        "modelName": "",
+        "terminateColumns": "专家反馈的答案",
+        "selectedToolKeys": [
+          "default-service-group.terminate"
+        ]
+      }
+    ],
+    "planType": "dynamic_agent",
+    "serviceGroup": "example-userInteractive",
+    "toolConfig": {
+      "toolDescription": "业务专家处理问题",
+      "enableInternalToolcall": true,
+      "enableHttpService": false,
+      "enableInConversation": false,
+      "publishStatus": "PUBLISHED",
+      "inputSchema": [
+        {
+          "name": "用户问题",
+          "description": "Parameter: 用户问题",
+          "type": "string",
+          "required": true
+        }
+      ]
+    },
+    "createTime": "2025-12-01T14:38:17.874085",
+    "updateTime": "2025-12-03T11:50:12.231812",
+    "version": null,
+    "planTemplateId": "new-1764569950163",
+    "accessLevel": "editable",
+    "readOnly": false
+  },
+  {
+    "title": "主入口-路由方法",
+    "steps": [
+      {
+        "stepRequirement": "已知：\n用户需求：<<用户需求>>\n\n请根据用户需求，决定使用什么方法来满足用户需求。\n如果是技术问题，就将问题路由到技术专家来解决\n如果是业务问题，就将问题路由到业务专家来解决\n如果是数据库问题，就将问题路由到数据库专家来解决",
+        "agentName": "",
+        "modelName": "",
+        "terminateColumns": "",
+        "selectedToolKeys": [
+          "example-userInteractive_技术专家处理问题",
+          "example-userInteractive_数据库专家处理问题",
+          "example-userInteractive_业务专家处理问题"
+        ]
+      }
+    ],
+    "planType": "dynamic_agent",
+    "serviceGroup": "example-userInteractive",
+    "toolConfig": {
+      "toolDescription": "路由方法",
+      "enableInternalToolcall": true,
+      "enableHttpService": false,
+      "enableInConversation": false,
+      "publishStatus": "PUBLISHED",
+      "inputSchema": [
+        {
+          "name": "用户需求",
+          "description": "Parameter: 用户需求",
+          "type": "string",
+          "required": true
+        }
+      ]
+    },
+    "createTime": "2025-12-07T01:30:32.894220",
+    "updateTime": "2025-12-08T11:58:12.726633",
+    "version": "4.8.6",
+    "planTemplateId": "planTemplate-1765042232887",
+    "accessLevel": "editable",
+    "readOnly": false
+  }
+]

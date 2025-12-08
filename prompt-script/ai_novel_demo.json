@@ -1,0 +1,120 @@
+[
+  {
+    "title": "提纲编写器",
+    "steps": [
+      {
+        "stepRequirement": "请先写一个AI的提纲：\n\n主题是 ： <<主题>>\n章节数要求是 ： <<章节数要求>>\n\n需要你做的事，是根据主题，生成一个 符合章节要求数量的提纲出来，并将你生产的提纲，输出到文件 : article.md里面\n\n\n输出的格式要求：\n\n# 标题\n## 章节名称\n## 章节名称\n\n注意你只需要输出章节的标题，不要输出具体章节的内容。注意你只需要输出章节的标题，不要输出具体章节的内容。注意你只需要输出章节的标题，不要输出具体章节的内容。注意你只需要输出章节的标题，不要输出具体章节的内容。\n\n请再最后结束任务之前，再读取并确认一下你的输出是否符合要求",
+        "agentName": "",
+        "modelName": "",
+        "terminateColumns": "输出文件名,任务完成情况信息说明",
+        "selectedToolKeys": [
+          "default-service-group_global_file_operator"
+        ]
+      }
+    ],
+    "planType": "dynamic_agent",
+    "serviceGroup": "AI_NOVEL",
+    "toolConfig": {
+      "toolDescription": "AI写小说的主入口",
+      "enableInternalToolcall": true,
+      "enableHttpService": false,
+      "enableInConversation": false,
+      "publishStatus": "PUBLISHED",
+      "inputSchema": [
+        {
+          "name": "主题",
+          "description": "Parameter: 主题",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "章节数要求",
+          "description": "Parameter: 章节数要求",
+          "type": "string",
+          "required": true
+        }
+      ]
+    },
+    "createTime": "2025-12-08T14:32:53.554238",
+    "updateTime": "2025-12-08T14:52:27.106144",
+    "version": "4.8.6",
+    "planTemplateId": "planTemplate-1765175452545",
+    "accessLevel": "editable",
+    "readOnly": false
+  },
+  {
+    "title": "章节正文编写器",
+    "steps": [
+      {
+        "stepRequirement": "现在需要你在提纲中写一段内容\n\n主题是 ： <<主题>>\n需要你写的章节的名称是 ： <<章节名称>>\n\n请先阅读一下前情提要： Recap.md\n\n\n你应先grep 需要你写的章节的名称，从article.md里面 ， 确保这个章节的名字是存在的。\n\n然后，需要你编写的内容，以replace的方式，更新到文件 article.md里面，注意保留章节名字。\n\n另外，请不要用get_all_text方法因为文件可能会很大。请只使用getText方法。\n\n字数要求1000字。\n\n再更新完成以后，你需要先删除 Recap.md，然后重新写一个新的Recap.md 作为 前情提要。\n",
+        "agentName": "",
+        "modelName": "",
+        "terminateColumns": "任务完成情况简短说明（100字内）",
+        "selectedToolKeys": [
+          "default-service-group_global_file_operator"
+        ]
+      }
+    ],
+    "planType": "dynamic_agent",
+    "serviceGroup": "AI_NOVEL",
+    "toolConfig": {
+      "toolDescription": "正文编写器，用来编写章节正文",
+      "enableInternalToolcall": true,
+      "enableHttpService": false,
+      "enableInConversation": false,
+      "publishStatus": "PUBLISHED",
+      "inputSchema": [
+        {
+          "name": "主题",
+          "description": "Parameter: 主题",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "章节名称",
+          "description": "Parameter: 章节名称 章节名称必须是markdown格式的 也就是是带有 # ## ##  等章节标题。注意，只需要给子章节名字就行，不要父章节# ，只需要##",
+          "type": "string",
+          "required": true
+        }
+      ]
+    },
+    "createTime": "2025-12-08T14:42:59.699929",
+    "updateTime": "2025-12-08T15:08:54.634647",
+    "version": "4.8.6",
+    "planTemplateId": "planTemplate-1765176179691",
+    "accessLevel": "editable",
+    "readOnly": false
+  },
+  {
+    "title": "主入口-编写整个小说",
+    "steps": [
+      {
+        "stepRequirement": "你现在需要写一篇内容为 AI 逐步占领地球的文章，5个章节。\n\n先编写提纲。\n然后读取提纲详细内容。\n然后，每个子章节，都调用正文编写器，来编写每个章节的正文。\n\n完成后，只需要告知 是否完成， 最后完成的内容在文件管理器的article.md 里面即可",
+        "agentName": "",
+        "modelName": "",
+        "terminateColumns": "",
+        "selectedToolKeys": [
+          "AI_NOVEL_提纲编写器",
+          "default-service-group_global_file_operator",
+          "AI_NOVEL_章节正文编写器"
+        ]
+      }
+    ],
+    "planType": "dynamic_agent",
+    "serviceGroup": "AI_NOVEL",
+    "toolConfig": {
+      "toolDescription": "主入口-编写整个小说",
+      "enableInternalToolcall": true,
+      "enableHttpService": false,
+      "enableInConversation": false,
+      "publishStatus": "PUBLISHED",
+      "inputSchema": []
+    },
+    "createTime": "2025-12-08T14:45:11.329114",
+    "updateTime": "2025-12-08T15:02:49.369817",
+    "version": "4.8.6",
+    "planTemplateId": "planTemplate-1765176290881",
+    "accessLevel": "editable",
+    "readOnly": false
+  }
+]
