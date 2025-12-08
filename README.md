@@ -6,66 +6,19 @@
 
 ## 用例概览
 
-### ⭐ 高频推荐
+### ⭐ 高频工具推荐
 
-（待补充）
-
-### 📋 场景化功能说明
-
-#### 1. AI小说
-- **文件位置**: [chn/ai-novel.md](chn/ai-novel.md) | [eng/ai-novel.md](eng/ai-novel.md)
-- **功能描述**: 展示长内容一体化输出和function-agent实现，通过分而治之策略完成长篇内容创作，支持批量生产长文章
+#### Bing搜索问答
+- **文件位置**: [chn/bing-search.md](chn/bing-search.md) | [eng/bing-search.md](eng/bing-search.md)
+- **推荐理由**: 这是非常经常用的工具之一，可以快速搜索并回答各种问题
+- **功能描述**: 使用MCP服务集成Bing搜索引擎，实现基于搜索结果的智能问答功能
 - **核心特性**:
-  - 长内容一体化输出：突破上下文限制，实现连贯的长篇内容生成
-  - Function-agent实现：智能任务分解和工具函数组合，体现"函数是第一公民"理念
-  - 批量生产长文章：支持章节化写作流程，可重复用于不同主题的长文创作
-  - 分而治之策略：将复杂创作任务分解为可管理的章节单元
-  - 内容连贯性保证：确保各章节间的逻辑一致性和风格统一
-- **适用场景**: 内容创作、创意写作、批量文章生产、长篇文档生成
+  - MCP服务配置和集成
+  - 在对话中直接使用，操作简单便捷
+  - 基于搜索结果的智能问答
+- **适用场景**: 信息搜索、智能问答、实时信息查询
 
-#### 2. 表单输入演示
-- **文件位置**: [chn/form-input-demo.md](chn/form-input-demo.md) | [eng/form-input-demo.md](eng/form-input-demo.md)
-- **功能描述**: 展示用户交互等待机制和登录状态保持功能
-- **核心特性**:
-  - Form-input工具使用
-  - 异步用户交互处理
-  - 浏览器会话状态保持
-- **适用场景**: 需要用户登录的网站操作、交互式工作流
-
-#### 3. 图片和PDF识别
-- **文件位置**: [chn/image-pdf-recognition.md](chn/image-pdf-recognition.md) | [eng/image-pdf-recognition.md](eng/image-pdf-recognition.md)
-- **功能描述**: 展示图片和PDF识别功能，支持批量识别和结构化输出，同时支持HTTP接口调用
-- **核心特性**:
-  - 文档解析和OCR技术
-  - 结构化数据提取
-  - HTTP服务发布和调用
-  - 文件上传和批量处理
-  - 异步任务执行
-  - JSON格式标准化输出
-- **适用场景**: 文档处理、内容提取、批量识别、API服务
-
-#### 4. 函数化Agent
-- **文件位置**: [chn/query-plan.md](chn/query-plan.md) | [eng/query-plan.md](eng/query-plan.md)
-- **功能描述**: 展示DeepResearch类应用的实现，体现"函数是第一公民"的设计理念和function-agent能力。通过将复杂任务分解为可复用的工具函数，实现智能化的深度调研搜索功能
-- **核心特性**:
-  - Function-agent能力：智能函数组合和自动任务分解
-  - 函数组合和复用：支持将复杂任务分解为可复用的工具函数
-  - 复杂任务分解：自动识别和拆分调研任务
-  - 基于真实数据的回答生成：所有回答都基于实际访问的页面内容
-  - 清晰的引用和依据展示：提供完整的引用链和证据支持
-  - 智能调研策略：自动选择最佳调研路径和资源
-- **适用场景**: 深度调研、学术研究、信息收集、智能分析
-
-#### 5. 股票价格查询
-- **文件位置**: [chn/stock-price-query.md](chn/stock-price-query.md) | [eng/stock-price-query.md](eng/stock-price-query.md)
-- **功能描述**: 展示系统默认的浏览器工具功能，支持Simple模式和Func-Agent增强模式
-- **核心特性**: 
-  - 简单聊天框查询
-  - 可变参数查询不同公司股价
-  - 详细的执行过程展示
-- **适用场景**: 金融信息查询、股价监控
-
-### 🔧 复杂场景Demo
+### 📋 场景化案例库
 
 #### 1. 小红书搜索抓取
 - **文件位置**: [chn/xiaohongshu-scraper.md](chn/xiaohongshu-scraper.md) | [eng/xiaohongshu-scraper.md](eng/xiaohongshu-scraper.md)
@@ -77,6 +30,70 @@
   - 用户交互等待：登录状态的处理和保持
   - 数据去重：自动检测并更新已有数据
 - **适用场景**: 网站数据抓取、内容采集、信息监控、数据存储
+
+#### 2. AI小说
+- **文件位置**: [chn/ai-novel.md](chn/ai-novel.md) | [eng/ai-novel.md](eng/ai-novel.md)
+- **功能描述**: 展示长内容一体化输出和function-agent实现，通过分而治之策略完成长篇内容创作，支持批量生产长文章
+- **核心特性**:
+  - 长内容一体化输出：突破上下文限制，实现连贯的长篇内容生成
+  - Function-agent实现：智能任务分解和工具函数组合，体现"函数是第一公民"理念
+  - 批量生产长文章：支持章节化写作流程，可重复用于不同主题的长文创作
+  - 分而治之策略：将复杂创作任务分解为可管理的章节单元
+  - 内容连贯性保证：确保各章节间的逻辑一致性和风格统一
+- **适用场景**: 内容创作、创意写作、批量文章生产、长篇文档生成
+
+#### 3. 表单输入演示
+- **文件位置**: [chn/form-input-demo.md](chn/form-input-demo.md) | [eng/form-input-demo.md](eng/form-input-demo.md)
+- **功能描述**: 展示用户交互等待机制和登录状态保持功能
+- **核心特性**:
+  - Form-input工具使用
+  - 异步用户交互处理
+  - 浏览器会话状态保持
+- **适用场景**: 需要用户登录的网站操作、交互式工作流
+
+#### 4. 图片和PDF识别
+- **文件位置**: [chn/image-pdf-recognition.md](chn/image-pdf-recognition.md) | [eng/image-pdf-recognition.md](eng/image-pdf-recognition.md)
+- **功能描述**: 展示图片和PDF识别功能，支持批量识别和结构化输出，同时支持HTTP接口调用
+- **核心特性**:
+  - 文档解析和OCR技术
+  - 结构化数据提取
+  - HTTP服务发布和调用
+  - 文件上传和批量处理
+  - 异步任务执行
+  - JSON格式标准化输出
+- **适用场景**: 文档处理、内容提取、批量识别、API服务
+
+#### 5. 函数化Agent
+- **文件位置**: [chn/query-plan.md](chn/query-plan.md) | [eng/query-plan.md](eng/query-plan.md)
+- **功能描述**: 展示DeepResearch类应用的实现，体现"函数是第一公民"的设计理念和function-agent能力。通过将复杂任务分解为可复用的工具函数，实现智能化的深度调研搜索功能
+- **核心特性**:
+  - Function-agent能力：智能函数组合和自动任务分解
+  - 函数组合和复用：支持将复杂任务分解为可复用的工具函数
+  - 复杂任务分解：自动识别和拆分调研任务
+  - 基于真实数据的回答生成：所有回答都基于实际访问的页面内容
+  - 清晰的引用和依据展示：提供完整的引用链和证据支持
+  - 智能调研策略：自动选择最佳调研路径和资源
+- **适用场景**: 深度调研、学术研究、信息收集、智能分析
+
+#### 6. 股票价格查询
+- **文件位置**: [chn/stock-price-query.md](chn/stock-price-query.md) | [eng/stock-price-query.md](eng/stock-price-query.md)
+- **功能描述**: 展示系统默认的浏览器工具功能，支持Simple模式和Func-Agent增强模式
+- **核心特性**: 
+  - 简单聊天框查询
+  - 可变参数查询不同公司股价
+  - 详细的执行过程展示
+- **适用场景**: 金融信息查询、股价监控
+
+#### 7. Bing搜索问答
+- **文件位置**: [chn/bing-search.md](chn/bing-search.md) | [eng/bing-search.md](eng/bing-search.md)
+- **功能描述**: 展示如何使用MCP服务集成Bing搜索引擎，实现基于搜索结果的智能问答功能
+- **核心特性**:
+  - MCP服务配置和集成
+  - 计划模板导入和管理
+  - 在对话中启用功能服务
+  - 基于搜索结果的智能问答
+  - 精确控制工具数量的func-agent设计理念
+- **适用场景**: 信息搜索、智能问答、实时信息查询
 
 ## 技术架构
 
@@ -115,6 +132,7 @@ public-usecase/
 │   ├── query-plan.md          # 函数化Agent
 │   ├── image-pdf-recognition.md # 图片和PDF识别
 │   ├── ai-novel.md           # AI小说
+│   ├── bing-search.md        # Bing搜索问答
 │   └── xiaohongshu-scraper.md # 小红书搜索抓取
 └── eng/                       # 英文版用例文档
     ├── stock-price-query.md   # Stock Price Query
@@ -122,6 +140,7 @@ public-usecase/
     ├── query-plan.md         # Functional Agent
     ├── image-pdf-recognition.md # Image and PDF Recognition
     ├── ai-novel.md          # AI Novel
+    ├── bing-search.md       # Bing Search Q&A
     └── xiaohongshu-scraper.md # Xiaohongshu Search Scraping
 ```
 
