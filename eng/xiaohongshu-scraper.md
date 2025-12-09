@@ -14,7 +14,7 @@ You can learn from this example how to use browser tools, database tools, and pa
 
 **Step 2** Configure database
 - Ensure database service is properly configured
-- System supports H2 database
+- System supports H2, MySQL and other mainstream databases
 - For detailed configuration steps, please refer to: [Database Configuration](common/database-config.md)
 
 **Step 3** Import data
