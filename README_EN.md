@@ -6,7 +6,7 @@ This project contains a collection of practical use cases that demonstrate the c
 
 ## Use Cases Overview
 
-### ⭐ Highly Recommended
+### ⭐ Highly Recommended Func-Agent
 
 #### Bing Search Q&A
 - **File Location**: [chn/bing-search.md](chn/bing-search.md) | [eng/bing-search.md](eng/bing-search.md)
@@ -20,9 +20,9 @@ This project contains a collection of practical use cases that demonstrate the c
 
 ---
 
-### Product Feature Introduction - Must-Try Tools
+### Product Feature Introduction - Func-Agent
 
-#### Function-Agent Example
+#### 1. Function-Agent Example
 - **Why Recommended**: This is a core example demonstrating the Function-Agent design philosophy, showing how to implement intelligent problem classification and expert systems through function composition and routing mechanisms
 - **Description**: Demonstrates the Function-Agent design philosophy, showing how to implement intelligent problem classification and expert systems through function composition and routing mechanisms
 - **Key Features**:
@@ -33,7 +33,7 @@ This project contains a collection of practical use cases that demonstrate the c
   - Function publishing and reuse: All functions can be called as independent tools
 - **Use Cases**: Intelligent problem classification, expert systems, function composition, task routing
 
-#### Form Input Demo
+#### 2. Form Input Demo
 - **Why Recommended**: Demonstrates user interaction waiting mechanisms and login state persistence functionality, a core example for handling website operations requiring user login
 - **Description**: Demonstrates user interaction waiting mechanisms and login state persistence functionality
 - **Key Features**:
@@ -42,7 +42,7 @@ This project contains a collection of practical use cases that demonstrate the c
   - Browser session state maintenance
 - **Use Cases**: Website operations requiring user login, interactive workflows
 
-#### Image and PDF Recognition
+#### 3. Image and PDF Recognition
 - **Why Recommended**: A core example demonstrating image and PDF recognition functionality, supporting batch recognition and structured output, as well as HTTP API calls
 - **Description**: Demonstrates image and PDF recognition functionality, supporting batch recognition and structured output, as well as HTTP API calls
 - **Key Features**:
@@ -54,7 +54,7 @@ This project contains a collection of practical use cases that demonstrate the c
   - JSON format standardized output
 - **Use Cases**: Document processing, content extraction, batch recognition, API services
 
-#### Long Content Output Demo
+#### 4. Long Content Output Demo
 - **Why Recommended**: A core example demonstrating integrated output of long-form content and function-agent implementation, completing long-form content creation through divide-and-conquer strategy, supporting batch production of long articles
 - **Description**: Demonstrates integrated output of long-form content and function-agent implementation, completing long-form content creation through divide-and-conquer strategy, supporting batch production of long articles
 - **Key Features**:
