@@ -23,6 +23,7 @@ This project contains a collection of practical use cases that demonstrate the c
 ### Product Feature Introduction - Func-Agent
 
 #### 1. Function-Agent Example
+- **File Location**: [chn/func-agent-example.md](chn/func-agent-example.md) | [eng/func-agent-example.md](eng/func-agent-example.md)
 - **Why Recommended**: This is a core example demonstrating the Function-Agent design philosophy, showing how to implement intelligent problem classification and expert systems through function composition and routing mechanisms
 - **Description**: Demonstrates the Function-Agent design philosophy, showing how to implement intelligent problem classification and expert systems through function composition and routing mechanisms
 - **Key Features**:
@@ -34,6 +35,7 @@ This project contains a collection of practical use cases that demonstrate the c
 - **Use Cases**: Intelligent problem classification, expert systems, function composition, task routing
 
 #### 2. Form Input Demo
+- **File Location**: [chn/form-input-demo.md](chn/form-input-demo.md) | [eng/form-input-demo.md](eng/form-input-demo.md)
 - **Why Recommended**: Demonstrates user interaction waiting mechanisms and login state persistence functionality, a core example for handling website operations requiring user login
 - **Description**: Demonstrates user interaction waiting mechanisms and login state persistence functionality
 - **Key Features**:
@@ -43,6 +45,7 @@ This project contains a collection of practical use cases that demonstrate the c
 - **Use Cases**: Website operations requiring user login, interactive workflows
 
 #### 3. Image and PDF Recognition
+- **File Location**: [chn/image-pdf-recognition.md](chn/image-pdf-recognition.md) | [eng/image-pdf-recognition.md](eng/image-pdf-recognition.md)
 - **Why Recommended**: A core example demonstrating image and PDF recognition functionality, supporting batch recognition and structured output, as well as HTTP API calls
 - **Description**: Demonstrates image and PDF recognition functionality, supporting batch recognition and structured output, as well as HTTP API calls
 - **Key Features**:
@@ -55,6 +58,7 @@ This project contains a collection of practical use cases that demonstrate the c
 - **Use Cases**: Document processing, content extraction, batch recognition, API services
 
 #### 4. Long Content Output Demo
+- **File Location**: [chn/ai-novel.md](chn/ai-novel.md) | [eng/ai-novel.md](eng/ai-novel.md)
 - **Why Recommended**: A core example demonstrating integrated output of long-form content and function-agent implementation, completing long-form content creation through divide-and-conquer strategy, supporting batch production of long articles
 - **Description**: Demonstrates integrated output of long-form content and function-agent implementation, completing long-form content creation through divide-and-conquer strategy, supporting batch production of long articles
 - **Key Features**:

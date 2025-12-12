@@ -23,6 +23,7 @@
 ### 产品功能介绍类Func-Agent
 
 #### 1. Func-Agent示例
+- **文件位置**: [chn/func-agent-example.md](chn/func-agent-example.md) | [eng/func-agent-example.md](eng/func-agent-example.md)
 - **推荐理由**: 这是展示Function-Agent设计理念的核心示例，演示了如何通过函数组合和路由机制实现智能问题分类和专家系统
 - **功能描述**: 展示函数化Agent（Function-Agent）设计理念，演示如何通过函数组合和路由机制，实现智能问题分类和专家系统
 - **核心特性**:
@@ -34,6 +35,7 @@
 - **适用场景**: 智能问题分类、专家系统、函数组合、任务路由
 
 #### 2. 表单输入演示
+- **文件位置**: [chn/form-input-demo.md](chn/form-input-demo.md) | [eng/form-input-demo.md](eng/form-input-demo.md)
 - **推荐理由**: 展示用户交互等待机制和登录状态保持功能，是处理需要用户登录网站操作的核心示例
 - **功能描述**: 展示用户交互等待机制和登录状态保持功能
 - **核心特性**:
@@ -43,6 +45,7 @@
 - **适用场景**: 需要用户登录的网站操作、交互式工作流
 
 #### 3. 图片和PDF识别演示
+- **文件位置**: [chn/image-pdf-recognition.md](chn/image-pdf-recognition.md) | [eng/image-pdf-recognition.md](eng/image-pdf-recognition.md)
 - **推荐理由**: 展示图片和PDF识别功能的核心示例，支持批量识别和结构化输出，同时支持HTTP接口调用
 - **功能描述**: 展示图片和PDF识别功能，支持批量识别和结构化输出，同时支持HTTP接口调用
 - **核心特性**:
@@ -55,6 +58,7 @@
 - **适用场景**: 文档处理、内容提取、批量识别、API服务
 
 #### 4. 长内容输出演示
+- **文件位置**: [chn/ai-novel.md](chn/ai-novel.md) | [eng/ai-novel.md](eng/ai-novel.md)
 - **推荐理由**: 展示长内容一体化输出和function-agent实现的核心示例，通过分而治之策略完成长篇内容创作，支持批量生产长文章
 - **功能描述**: 展示长内容一体化输出和function-agent实现，通过分而治之策略完成长篇内容创作，支持批量生产长文章
 - **核心特性**:
