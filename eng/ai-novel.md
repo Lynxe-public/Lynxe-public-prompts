@@ -48,6 +48,6 @@ You can learn from this how to create multiple specialized function tools, how t
 - Function-Agent capability: Intelligent function composition and automatic task decomposition
 - Function composition and reuse: Support for decomposing complex creation tasks into reusable tool functions
 - Divide-and-conquer strategy: Decompose complex creation tasks into manageable chapter units
-- File operations: Use global_file_operator tool for file read and write operations
+- File operations: Use file-operations_global_file_enhanced_grep, file-operations_global_file_write_file_operator, and file-operations_global_file_read_file_operator tools for file read and write operations
 - Recap mechanism: Maintain coherence between chapters through Recap.md file
 - Word count control: Ensure each chapter meets the specified word count requirement

@@ -34,7 +34,9 @@
 - 点击"添加/删除工具"按钮
 - 选择以下工具：
   - `markdown_converter`工具
-  - `global_file_operator`工具
+  - `file-operations_global_file_enhanced_grep`工具
+  - `file-operations_global_file_write_file_operator`工具
+  - `file-operations_global_file_read_file_operator`工具
 
 **第5步** 保存计划
 - 点击"save"按钮

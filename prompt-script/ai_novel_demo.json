@@ -8,7 +8,9 @@
         "modelName": "",
         "terminateColumns": "输出文件名,任务完成情况信息说明",
         "selectedToolKeys": [
-          "default-service-group_global_file_operator"
+          "file-operations_global_file_enhanced_grep",
+          "file-operations_global_file_write_file_operator",
+          "file-operations_global_file_read_file_operator"
         ]
       }
     ],
@@ -51,7 +53,9 @@
         "modelName": "",
         "terminateColumns": "任务完成情况简短说明（100字内）",
         "selectedToolKeys": [
-          "default-service-group_global_file_operator"
+          "file-operations_global_file_enhanced_grep",
+          "file-operations_global_file_write_file_operator",
+          "file-operations_global_file_read_file_operator"
         ]
       }
     ],
@@ -95,7 +99,9 @@
         "terminateColumns": "",
         "selectedToolKeys": [
           "AI_NOVEL_提纲编写器",
-          "default-service-group_global_file_operator",
+          "file-operations_global_file_enhanced_grep",
+          "file-operations_global_file_write_file_operator",
+          "file-operations_global_file_read_file_operator",
           "AI_NOVEL_章节正文编写器"
         ]
       }

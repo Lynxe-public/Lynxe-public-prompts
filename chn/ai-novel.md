@@ -48,6 +48,6 @@
 - Function-Agent能力：智能函数组合和自动任务分解
 - 函数组合和复用：支持将复杂创作任务分解为可复用的工具函数
 - 分而治之策略：将复杂创作任务分解为可管理的章节单元
-- 文件操作：使用global_file_operator工具进行文件读写操作
+- 文件操作：使用file-operations_global_file_enhanced_grep、file-operations_global_file_write_file_operator、file-operations_global_file_read_file_operator工具进行文件读写操作
 - 前情提要机制：通过Recap.md文件保持章节间的连贯性
 - 字数控制：确保每个章节达到指定的字数要求

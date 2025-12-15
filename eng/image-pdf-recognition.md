@@ -34,7 +34,9 @@ This example uses enhanced func-agent to implement image and PDF recognition fun
 - Click "Add/Remove Tools" button
 - Select the following tools:
   - `markdown_converter` tool
-  - `global_file_operator` tool
+  - `file-operations_global_file_enhanced_grep` tool
+  - `file-operations_global_file_write_file_operator` tool
+  - `file-operations_global_file_read_file_operator` tool
 
 **Step 5** Save plan
 - Click "save" button
