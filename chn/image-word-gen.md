@@ -1,5 +1,7 @@
 # 图文生成与Word导出
 
+<img width="1168" height="1288" alt="image" src="https://github.com/user-attachments/assets/5e977b03-395d-4c2d-b979-0590981aaea0" />
+
 ## 功能说明
 
 这是一个展示如何生成带图片的Markdown内容并导出为Word文档的示例，演示了如何通过Function-Agent实现内容创作、图片生成和文档格式转换的完整流程。
