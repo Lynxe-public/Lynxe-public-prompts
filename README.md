@@ -93,6 +93,17 @@
   - 精确控制工具数量的func-agent设计理念
 - **适用场景**: 信息搜索、智能问答、实时信息查询
 
+#### 3. 图文生成与Word导出
+- **文件位置**: [chn/image-word-gen.md](chn/image-word-gen.md) | [eng/image-word-gen.md](eng/image-word-gen.md)
+- **功能描述**: 展示如何生成带图片的Markdown内容并导出为Word文档，实现内容创作、图片生成和文档格式转换的完整流程
+- **核心特性**:
+  - 内容创作：自动生成符合主题要求的长文本内容
+  - 图片生成：使用wan2.6-t2i模型进行AI图片生成
+  - 格式转换：将Markdown文档转换为Word格式
+  - 图片插入：自动将生成的图片插入到Markdown文档的指定位置
+  - 多步骤协调：通过单一函数调用完成多个步骤的自动化执行
+- **适用场景**: 内容创作、文档生成、图文混排、格式转换
+
 ## 技术架构
 
 ### 核心组件
@@ -115,6 +126,7 @@ public-usecase/
 │   ├── ai-novel.md           # AI小说
 │   ├── bing-search.md        # Bing搜索问答
 │   ├── func-agent-example.md # 函数化Agent示例
+│   ├── image-word-gen.md    # 图文生成与Word导出
 │   └── xiaohongshu-scraper.md # 小红书搜索抓取
 └── eng/                       # 英文版用例文档
     ├── stock-price-query.md   # Stock Price Query

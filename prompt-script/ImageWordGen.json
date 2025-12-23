@@ -1,0 +1,36 @@
+[
+  {
+    "title": "生成一个markdown带图内容并输出为word",
+    "steps": [
+      {
+        "stepRequirement": "1) 先写一个1000字左右的小说，关于人类被AI统治的，写入到 novel.md\n2) 基于这个小说，生成一个概念封面，使用wan2.6-t2i模型\n3）将封面写入到小说的的标题的下面一行\n4) 转化这个小说为word文档",
+        "agentName": "",
+        "modelName": "",
+        "terminateColumns": "",
+        "selectedToolKeys": [
+          "file-operations_global_file_read_file_operator",
+          "file-operations_global_file_write_file_operator",
+          "file-operations_markdown_to_docx",
+          "default-service-group_image_generate"
+        ]
+      }
+    ],
+    "planType": "dynamic_agent",
+    "serviceGroup": "word_test",
+    "maxSteps": null,
+    "toolConfig": {
+      "toolDescription": "生成一个markdown",
+      "enableInternalToolcall": true,
+      "enableHttpService": false,
+      "enableInConversation": false,
+      "publishStatus": "PUBLISHED",
+      "inputSchema": []
+    },
+    "createTime": "2025-12-22T22:59:57.040244",
+    "updateTime": "2025-12-23T09:51:56.587322",
+    "version": "4.9.2",
+    "planTemplateId": "planTemplate-1766415325475",
+    "accessLevel": "editable",
+    "readOnly": false
+  }
+]

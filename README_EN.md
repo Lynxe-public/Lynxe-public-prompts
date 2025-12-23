@@ -93,6 +93,17 @@ This project contains a collection of practical use cases that demonstrate the c
   - Func-agent design philosophy of precisely controlling tool quantity
 - **Use Cases**: Information search, intelligent Q&A, real-time information query
 
+#### 3. Image and Word Generation
+- **File Location**: [chn/image-word-gen.md](chn/image-word-gen.md) | [eng/image-word-gen.md](eng/image-word-gen.md)
+- **Description**: Demonstrates how to generate Markdown content with images and export it as a Word document, implementing a complete workflow of content creation, image generation, and document format conversion
+- **Key Features**:
+  - Content creation: Automatically generate long text content that meets theme requirements
+  - Image generation: Use wan2.6-t2i model for AI image generation
+  - Format conversion: Convert Markdown documents to Word format
+  - Image insertion: Automatically insert generated images into specified positions in Markdown documents
+  - Multi-step coordination: Complete multiple steps of automated execution through a single function call
+- **Use Cases**: Content creation, document generation, image-text layout, format conversion
+
 ## Technical Architecture
 
 ### Core Components
@@ -124,6 +135,7 @@ public-usecase/
     ├── ai-novel.md          # AI Novel
     ├── bing-search.md       # Bing Search Q&A
     ├── func-agent-example.md # Function-Agent Example
+    ├── image-word-gen.md   # Image and Word Generation
     └── xiaohongshu-scraper.md # Xiaohongshu Search Scraping
 ```
 
