@@ -8,8 +8,8 @@
         "modelName": "",
         "terminateColumns": "",
         "selectedToolKeys": [
-          "EnhancedBing_EnhancedBing_bing_search",
-          "EnhancedBing_EnhancedBing_fetch_webpage"
+          "EnhancedBing_bing_search",
+          "EnhancedBing_fetch_webpage"
         ]
       }
     ],

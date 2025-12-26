@@ -12,7 +12,7 @@ This project contains a collection of practical use cases that demonstrate the c
 - **File Location**: [chn/bing-search.md](chn/bing-search.md) | [eng/bing-search.md](eng/bing-search.md)
 - **Why Recommended**: This is one of the most frequently used tools, capable of quickly searching and answering various questions
 - **Description**: Uses MCP service to integrate Bing search engine, implementing intelligent Q&A functionality based on search results
-- **Key Features**:
+- **Key Features**: 
   - MCP service configuration and integration
   - Direct use in conversation, simple and convenient operation
   - Intelligent Q&A based on search results
