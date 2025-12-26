@@ -3,7 +3,7 @@
     "title": "body-text-writer",
     "steps": [
       {
-        "stepRequirement": "现在需要你在提纲中写一段内容\n\n主题是 ： <<主题>>\n需要你写的章节的名称是 ： <<章节名称>>\n\n请先阅读一下前情提要： Recap.md\n\n\n你应先grep 需要你写的章节的名称，从article.md里面 ， 确保这个章节的名字是存在的。\n\n然后，需要你编写的内容，以replace的方式，更新到文件 article.md里面，注意保留章节名字。\n\n另外，请不要用get_all_text方法因为文件可能会很大。请只使用getText方法。\n\n字数要求1000字。\n\n再更新完成以后，你需要先删除 Recap.md，然后重新写一个新的Recap.md 作为 前情提要。\n",
+        "stepRequirement": "现在需要你在提纲中写一段内容\n\n主题是 ： <<主题>>\n需要你写的章节的名称是 ： <<章节名称>>\n\n请先阅读一下前情提要： Recap.md\n\n\n你应先grep 需要你写的章节的名称，从article.md里面 ， 确保这个章节的名字是存在的。\n\n然后，需要你编写的内容，以replace的方式，更新到文件 article.md里面，注意保留章节名字。\n\n另外，阅读文档不要使用bypassrule来读取全部的文档。\n\n字数要求1000字。\n\n再更新完成以后，你需要先删除 Recap.md，然后重新写一个新的Recap.md 作为 前情提要。\n",
         "agentName": "",
         "modelName": "",
         "terminateColumns": "任务完成情况简短说明（100字内）",
@@ -32,14 +32,14 @@
         },
         {
           "name": "章节名称",
-          "description": "Parameter: 章节名称",
+          "description": "章节名称，必须是带有完整章节的markdown格式前缀 的章节名字",
           "type": "string",
           "required": true
         }
       ]
     },
     "createTime": "2025-12-26T14:23:05.621576",
-    "updateTime": "2025-12-26T14:28:29.775423",
+    "updateTime": "2025-12-26T21:25:54.884863",
     "version": "4.9.6",
     "planTemplateId": "planTemplate-1765176179691",
     "accessLevel": "editable",
@@ -55,7 +55,8 @@
         "terminateColumns": "",
         "selectedToolKeys": [
           "AI_NOVEL_body-text-writer",
-          "AI_NOVEL_outline-writer"
+          "AI_NOVEL_outline-writer",
+          "file-service-group_read-file-operator"
         ]
       }
     ],
@@ -71,7 +72,7 @@
       "inputSchema": []
     },
     "createTime": "2025-12-26T14:23:05.626090",
-    "updateTime": "2025-12-26T14:30:01.456883",
+    "updateTime": "2025-12-26T21:29:45.244312",
     "version": "4.9.6",
     "planTemplateId": "planTemplate-1765176290881",
     "accessLevel": "editable",
