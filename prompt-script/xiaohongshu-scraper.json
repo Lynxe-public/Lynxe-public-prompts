@@ -8,7 +8,9 @@
         "modelName": "",
         "terminateColumns": "",
         "selectedToolKeys": [
-          "database-service-group_database_metadata_use"
+          "database-service-group_get-table-meta",
+          "database-service-group_database-write-use",
+          "database-service-group_execute-read-sql"
         ]
       }
     ],
@@ -23,9 +25,9 @@
       "publishStatus": "PUBLISHED",
       "inputSchema": []
     },
-    "createTime": "2025-12-15T14:26:08.848792",
-    "updateTime": "2025-12-15T14:26:08.854235",
-    "version": "4.9.0",
+    "createTime": "2025-12-26T14:45:53.470777",
+    "updateTime": "2025-12-26T14:59:18.135499",
+    "version": "4.9.6",
     "planTemplateId": "planTemplate-1764919572331",
     "accessLevel": "editable",
     "readOnly": false
@@ -34,15 +36,24 @@
     "title": "第三步 获取小红书的高效grep语句，你需要把当前生产的内容复制到第四步里，可以加速",
     "steps": [
       {
-        "stepRequirement": "已知：\n一个小红书的链接 : https://www.xiaohongshu.com\n\n搜索信息： 美食\n\n\n打开小红书的链接，在搜索框输入 搜索信息 ，然后按回车。\n\n然后，获取网站内容到文件。\n\n然后你必须在获取内容以后立即关闭这个小红书链接！然后你必须在获取内容以后立即关闭这个小红书链接！然后你必须在获取内容以后立即关闭这个小红书链接！\n\n\n在关闭连接以后，\n全量的读取 刚才已经保存的网站全量内容 。\n\n\n然后尝试构造最合适的能够通过grep工具获取主要的内容链接(url）和对应标题（text)的方法。\n\n\n尝试用grep 验证你的思路，确保grep能找到需要的信息。\n\n如果找到了合适的grep参数，就输出到grepArgs.md里面，输出的时候不要path 。\n如果没找到就输出没找到合适的 \n",
+        "stepRequirement": "已知：\n一个小红书的链接 : https://www.xiaohongshu.com\n\n搜索信息： 美食\n\n\n打开小红书的链接，在搜索框输入 搜索信息 ，然后按回车。\n\n然后，获取网站内容到文件。\n\n然后你必须在获取内容以后立即关闭这个小红书链接！然后你必须在获取内容以后立即关闭这个小红书链接！然后你必须在获取内容以后立即关闭这个小红书链接！\n\n\n在关闭连接以后，\n全量的读取 刚才已经保存的网站全量内容 。\n\n\n然后尝试构造最合适的能够通过grep工具获取主要的 内容链接(url）和对应标题（text)的方法。\n\n注意，因为网站里有 用户的信息，也有帖子（内容的信息），请找到一个最好的能只找到内容帖子标题和url，不包含用户信息的办法。\n\n\n尝试用grep 验证你的思路，确保grep能找到需要的信息。\n\n如果找到了合适的grep参数，就输出到grepArgs.md里面，输出的时候不要path 。\n如果没找到就输出没找到合适的 \n",
         "agentName": "",
-        "modelName": "qwen3-max-preview",
+        "modelName": "qwen3-coder-plus",
         "terminateColumns": "",
         "selectedToolKeys": [
-          "default-service-group_browser_use",
-          "file-operations_global_file_enhanced_grep",
-          "file-operations_global_file_write_file_operator",
-          "file-operations_global_file_read_file_operator"
+          "browser-service-group_click-browser",
+          "browser-service-group_close-tab-browser",
+          "browser-service-group_download-browser",
+          "browser-service-group_get-web-content-browser",
+          "browser-service-group_input-text-browser",
+          "browser-service-group_key-enter-browser",
+          "browser-service-group_navigate-browser",
+          "browser-service-group_new-tab-browser",
+          "browser-service-group_screenshot-browser",
+          "browser-service-group_switch-tab-browser",
+          "file-service-group_grep-files",
+          "file-service-group_read-file-operator",
+          "file-service-group_write-file-operator"
         ]
       }
     ],
@@ -57,9 +68,9 @@
       "publishStatus": "PUBLISHED",
       "inputSchema": []
     },
-    "createTime": "2025-12-15T14:39:45.026869",
-    "updateTime": "2025-12-15T17:05:57.316128",
-    "version": "4.9.0",
+    "createTime": "2025-12-26T14:45:53.474820",
+    "updateTime": "2025-12-26T22:45:48.316419",
+    "version": "4.9.6",
     "planTemplateId": "planTemplate-1765780752346",
     "accessLevel": "editable",
     "readOnly": false
@@ -68,15 +79,24 @@
     "title": "第四步，核心步骤，获取特定分类的前10条信息",
     "steps": [
       {
-        "stepRequirement": "已知：\n一个小红书的链接 : https://www.xiaohongshu.com\n\n搜索信息： <<搜索信息>> \n\n\n打开小红书的链接，在搜索框输入 搜索信息 ，然后按回车。\n\n然后，获取网站内容到文件。\n\n然后你必须在获取内容以后立即关闭这个小红书链接！然后你必须在获取内容以后立即关闭这个小红书链接！然后你必须在获取内容以后立即关闭这个小红书链接！\n\n\n在关闭连接以后，\n\n请用 {\"pattern\": \"- region \\\\[(idx=\\\\d+)\\\\]:.*?text: ([^\\\"]+).*?/url: (http://s@Url.a/\\\\d+)\", \"multiline\": true, \"output_mode\": \"content\", \"context_lines\": 2}\n\n来grep 处所有的链接和信息。\n\n\n然后 以 前10个链接 和 分类作为参数， 以 网站关键信息爬取.私有put一个链接的内容到数据库 作为方法，注册所有的任务到并行工具上。\n\n确认所有链接都注册上去以后，开始执行",
+        "stepRequirement": "已知：\n一个小红书的链接 : https://www.xiaohongshu.com\n\n搜索信息： <<搜索信息>> \n\n\n打开小红书的链接，在搜索框输入 搜索信息 ，然后按回车。\n\n然后，获取网站内容到文件。\n\n然后你必须在获取内容以后立即关闭这个小红书链接！然后你必须在获取内容以后立即关闭这个小红书链接！然后你必须在获取内容以后立即关闭这个小红书链接！\n\n\n在关闭连接以后，\n\n请用 ppattern: 'region \\[idx=\\d+\\]:\\n\\s+\\- link \\[idx=\\d+\\]:\\n\\s+\\- /url: http://s@Url\\\\.a/\\\\d+\\\\n\\\\s+\\\\- img \\[idx=\\d+\\]\\n\\s+\\- text: [^\\n]*$(?<!\\d+小时前)(?<!\\d+分钟前)(?<!\\d+天前)(?<!\\d+月前)(?<!\\d+年前)(?<!\\d+万)'\nmultiline: true\noutput_mode: content\n\n来grep 处所有的链接和信息。\n\n\n然后 以 前2个你认为是实际帖子的（不是用户，而是真正的帖子）链接 和 分类作为参数， 以 网站关键信息爬取.私有put一个链接的内容到数据库 作为方法，注册所有的任务到并行工具上。\n\n确认所有链接都注册上去以后，开始执行",
         "agentName": "",
         "modelName": "",
         "terminateColumns": "",
         "selectedToolKeys": [
-          "default-service-group_browser_use",
-          "parallel-execution_parallel_execution_tool",
-          "网站关键信息爬取_私有put一个链接的内容到数据库",
-          "file-operations_global_file_enhanced_grep"
+          "browser-service-group_click-browser",
+          "browser-service-group_close-tab-browser",
+          "browser-service-group_get-web-content-browser",
+          "browser-service-group_input-text-browser",
+          "browser-service-group_key-enter-browser",
+          "browser-service-group_navigate-browser",
+          "browser-service-group_new-tab-browser",
+          "browser-service-group_switch-tab-browser",
+          "parallel-execution_register-batch-execution",
+          "parallel-execution_start-parallel-execution",
+          "file-service-group_grep-files",
+          "file-service-group_read-file-operator",
+          "网站关键信息爬取_私有put一个链接的内容到database"
         ]
       }
     ],
@@ -98,9 +118,9 @@
         }
       ]
     },
-    "createTime": "2025-12-15T14:26:08.856409",
-    "updateTime": "2025-12-15T21:52:05.655918",
-    "version": "4.8.7",
+    "createTime": "2025-12-26T14:45:53.478192",
+    "updateTime": "2025-12-26T22:51:41.751034",
+    "version": "4.9.6",
     "planTemplateId": "planTemplate-1764922649956",
     "accessLevel": "editable",
     "readOnly": false
@@ -109,12 +129,22 @@
     "title": "第一步需要先做登录,登录只需要做一次",
     "steps": [
       {
-        "stepRequirement": "1 浏览器打开小红书 https://www.xiaohongshu.com/explore\n2 如果目前系统没有登录，就 调用 表单 等待并让用户输入 ok 来完成登录\n3 如果系统已经登录，就直接结束当前流程",
+        "stepRequirement": "1 浏览器打开小红书 https://www.xiaohongshu.com/explore\n2 如果目前系统没有登录，就 调用 表单，提供一个是，否 完成登录的 单选来等待用户输入。\n3 如果系统已经登录，就直接结束当前流程",
         "agentName": "",
-        "modelName": "",
+        "modelName": "qwen3-max-preview",
         "terminateColumns": "",
         "selectedToolKeys": [
-          "default-service-group_browser_use"
+          "browser-service-group_click-browser",
+          "browser-service-group_close-tab-browser",
+          "browser-service-group_download-browser",
+          "browser-service-group_get-web-content-browser",
+          "browser-service-group_input-text-browser",
+          "browser-service-group_key-enter-browser",
+          "browser-service-group_navigate-browser",
+          "browser-service-group_new-tab-browser",
+          "browser-service-group_screenshot-browser",
+          "browser-service-group_switch-tab-browser",
+          "default-service-group_form-input"
         ]
       }
     ],
@@ -129,15 +159,15 @@
       "publishStatus": "PUBLISHED",
       "inputSchema": []
     },
-    "createTime": "2025-12-15T14:26:08.860673",
-    "updateTime": "2025-12-15T14:30:02.877939",
-    "version": "4.9.0",
+    "createTime": "2025-12-26T14:45:53.480954",
+    "updateTime": "2025-12-26T15:10:40.584088",
+    "version": "4.9.6",
     "planTemplateId": "planTemplate-1764919347341",
     "accessLevel": "editable",
     "readOnly": false
   },
   {
-    "title": "私有put一个链接的内容到数据库",
+    "title": "私有put一个链接的内容到database",
     "steps": [
       {
         "stepRequirement": "已知：\n一个小红书的链接 : <<小红书链接>>\ncategory : <<分类或搜索词>>\n\ncrawl_data的表的结构：\nid（主键,long 自增，数字）,\ncategory(字符串200个字符够了）,\ntitle(标题，要text，足够大)，\ndetails(详情，要text，足够大）\n\n打开小红书的链接，获取网站内容到文件。\n然后你必须在获取内容以后立即关闭这个小红书链接！然后你必须在获取内容以后立即关闭这个小红书链接！然后你必须在获取内容以后立即关闭这个小红书链接！\n\n\n在关闭连接以后，\n从网站内容文件里 获取 这个文章的标题 和 内容 \n\n\n然后，先用 标题 去 查询一下当前的 crawl_data 里面有没有既有的数据 。 如果没有数据就写入数据。 有的话就更新数据.\n\n内容的更新要求：\n只写入作者要表达的关键信息，不要存入yaml格式的内容",
@@ -145,12 +175,19 @@
         "modelName": "",
         "terminateColumns": "影响行数,错误原因(可选，如有)",
         "selectedToolKeys": [
-          "database-service-group_database_read_use",
-          "database-service-group_database_write_use",
+          "database-service-group_execute-read-sql",
           "database-service-group_uuid_generate",
-          "database-service-group_database_metadata_use",
-          "default-service-group_browser_use",
-          "file-operations_global_file_read_file_operator"
+          "database-service-group_execute-write-sql",
+          "browser-service-group_click-browser",
+          "browser-service-group_close-tab-browser",
+          "browser-service-group_download-browser",
+          "browser-service-group_get-web-content-browser",
+          "browser-service-group_input-text-browser",
+          "browser-service-group_key-enter-browser",
+          "browser-service-group_navigate-browser",
+          "browser-service-group_new-tab-browser",
+          "browser-service-group_screenshot-browser",
+          "browser-service-group_switch-tab-browser"
         ]
       }
     ],
@@ -178,9 +215,9 @@
         }
       ]
     },
-    "createTime": "2025-12-15T14:26:08.865931",
-    "updateTime": "2025-12-15T21:59:19.377290",
-    "version": "4.8.7",
+    "createTime": "2025-12-26T14:45:53.483088",
+    "updateTime": "2025-12-26T22:30:47.886260",
+    "version": "4.9.6",
     "planTemplateId": "planTemplate-1764920202234",
     "accessLevel": "editable",
     "readOnly": false
