@@ -8,9 +8,9 @@
         "modelName": "",
         "terminateColumns": "任务完成情况简短说明（100字内）",
         "selectedToolKeys": [
-          "file-service-group_grep-files",
-          "file-service-group_read-file-operator",
-          "file-service-group_write-file-operator"
+          "fs-grep-files",
+          "fs-read-file-operator",
+          "fs-write-file-operator"
         ]
       }
     ],
@@ -54,9 +54,9 @@
         "modelName": "",
         "terminateColumns": "",
         "selectedToolKeys": [
-          "AI_NOVEL_body-text-writer",
-          "AI_NOVEL_outline-writer",
-          "file-service-group_read-file-operator"
+          "AI_NOVEL-body-text-writer",
+          "AI_NOVEL-outline-writer",
+          "fs-read-file-operator"
         ]
       }
     ],
@@ -87,8 +87,8 @@
         "modelName": "",
         "terminateColumns": "输出文件名,任务完成情况信息说明",
         "selectedToolKeys": [
-          "file-service-group_read-file-operator",
-          "file-service-group_write-file-operator"
+          "fs-read-file-operator",
+          "fs-write-file-operator"
         ]
       }
     ],

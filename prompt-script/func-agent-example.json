@@ -8,7 +8,7 @@
         "modelName": "",
         "terminateColumns": "专家反馈的答案",
         "selectedToolKeys": [
-          "default-service-group_terminate"
+          "default-terminate"
         ]
       }
     ],
@@ -46,7 +46,7 @@
         "modelName": "",
         "terminateColumns": "专家反馈的答案",
         "selectedToolKeys": [
-          "default-service-group_terminate"
+          "default-terminate"
         ]
       }
     ],
@@ -84,9 +84,9 @@
         "modelName": "",
         "terminateColumns": "",
         "selectedToolKeys": [
-          "example-userInteractive_business-expert-question-processor",
-          "example-userInteractive_database-expert-question-processor",
-          "example-userInteractive_technical-expert-question-processor"
+          "example-userInteractive-business-expert-question-processor",
+          "example-userInteractive-database-expert-question-processor",
+          "example-userInteractive-technical-expert-question-processor"
         ]
       }
     ],
@@ -124,7 +124,7 @@
         "modelName": "",
         "terminateColumns": "专家反馈的答案",
         "selectedToolKeys": [
-          "default-service-group_terminate"
+          "default-terminate"
         ]
       }
     ],

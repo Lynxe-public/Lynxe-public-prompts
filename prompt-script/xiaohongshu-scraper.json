@@ -8,9 +8,9 @@
         "modelName": "",
         "terminateColumns": "",
         "selectedToolKeys": [
-          "database-service-group_get-table-meta",
-          "database-service-group_database-write-use",
-          "database-service-group_execute-read-sql"
+          "db-service-get-table-meta",
+          "db-service-database-write-use",
+          "db-service-execute-read-sql"
         ]
       }
     ],
@@ -41,19 +41,19 @@
         "modelName": "qwen3-coder-plus",
         "terminateColumns": "",
         "selectedToolKeys": [
-          "browser-service-group_click-browser",
-          "browser-service-group_close-tab-browser",
-          "browser-service-group_download-browser",
-          "browser-service-group_get-web-content-browser",
-          "browser-service-group_input-text-browser",
-          "browser-service-group_key-enter-browser",
-          "browser-service-group_navigate-browser",
-          "browser-service-group_new-tab-browser",
-          "browser-service-group_screenshot-browser",
-          "browser-service-group_switch-tab-browser",
-          "file-service-group_grep-files",
-          "file-service-group_read-file-operator",
-          "file-service-group_write-file-operator"
+          "bw-click-browser",
+          "bw-close-tab-browser",
+          "bw-download-browser",
+          "bw-get-web-content-browser",
+          "bw-input-text-browser",
+          "bw-key-enter-browser",
+          "bw-navigate-browser",
+          "bw-new-tab-browser",
+          "bw-screenshot-browser",
+          "bw-switch-tab-browser",
+          "fs-grep-files",
+          "fs-read-file-operator",
+          "fs-write-file-operator"
         ]
       }
     ],
@@ -84,19 +84,19 @@
         "modelName": "",
         "terminateColumns": "",
         "selectedToolKeys": [
-          "browser-service-group_click-browser",
-          "browser-service-group_close-tab-browser",
-          "browser-service-group_get-web-content-browser",
-          "browser-service-group_input-text-browser",
-          "browser-service-group_key-enter-browser",
-          "browser-service-group_navigate-browser",
-          "browser-service-group_new-tab-browser",
-          "browser-service-group_switch-tab-browser",
-          "parallel-execution_register-batch-execution",
-          "parallel-execution_start-parallel-execution",
-          "file-service-group_grep-files",
-          "file-service-group_read-file-operator",
-          "网站关键信息爬取_私有put一个链接的内容到database"
+          "bw-click-browser",
+          "bw-close-tab-browser",
+          "bw-get-web-content-browser",
+          "bw-input-text-browser",
+          "bw-key-enter-browser",
+          "bw-navigate-browser",
+          "bw-new-tab-browser",
+          "bw-switch-tab-browser",
+          "parallel-register-batch-execution",
+          "parallel-start-parallel-execution",
+          "fs-grep-files",
+          "fs-read-file-operator",
+          "网站关键信息爬取-私有put一个链接的内容到database"
         ]
       }
     ],
@@ -134,17 +134,17 @@
         "modelName": "qwen3-max-preview",
         "terminateColumns": "",
         "selectedToolKeys": [
-          "browser-service-group_click-browser",
-          "browser-service-group_close-tab-browser",
-          "browser-service-group_download-browser",
-          "browser-service-group_get-web-content-browser",
-          "browser-service-group_input-text-browser",
-          "browser-service-group_key-enter-browser",
-          "browser-service-group_navigate-browser",
-          "browser-service-group_new-tab-browser",
-          "browser-service-group_screenshot-browser",
-          "browser-service-group_switch-tab-browser",
-          "default-service-group_form-input"
+          "bw-click-browser",
+          "bw-close-tab-browser",
+          "bw-download-browser",
+          "bw-get-web-content-browser",
+          "bw-input-text-browser",
+          "bw-key-enter-browser",
+          "bw-navigate-browser",
+          "bw-new-tab-browser",
+          "bw-screenshot-browser",
+          "bw-switch-tab-browser",
+          "default-form-input"
         ]
       }
     ],
@@ -175,19 +175,19 @@
         "modelName": "",
         "terminateColumns": "影响行数,错误原因(可选，如有)",
         "selectedToolKeys": [
-          "database-service-group_execute-read-sql",
-          "database-service-group_uuid_generate",
-          "database-service-group_execute-write-sql",
-          "browser-service-group_click-browser",
-          "browser-service-group_close-tab-browser",
-          "browser-service-group_download-browser",
-          "browser-service-group_get-web-content-browser",
-          "browser-service-group_input-text-browser",
-          "browser-service-group_key-enter-browser",
-          "browser-service-group_navigate-browser",
-          "browser-service-group_new-tab-browser",
-          "browser-service-group_screenshot-browser",
-          "browser-service-group_switch-tab-browser"
+          "db-service-execute-read-sql",
+          "db-service-uuid-generate",
+          "db-service-execute-write-sql",
+          "bw-click-browser",
+          "bw-close-tab-browser",
+          "bw-download-browser",
+          "bw-get-web-content-browser",
+          "bw-input-text-browser",
+          "bw-key-enter-browser",
+          "bw-navigate-browser",
+          "bw-new-tab-browser",
+          "bw-screenshot-browser",
+          "bw-switch-tab-browser"
         ]
       }
     ],

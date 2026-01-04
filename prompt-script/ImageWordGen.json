@@ -8,11 +8,11 @@
         "modelName": "",
         "terminateColumns": "",
         "selectedToolKeys": [
-          "file-service-group_read-file-operator",
-          "file-service-group_replace-file-operator",
-          "file-service-group_write-file-operator",
-          "image-service-group_image-generate",
-          "import-export-service_markdown-to-docx"
+          "fs-read-file-operator",
+          "fs-replace-file-operator",
+          "fs-write-file-operator",
+          "image-image-generate",
+          "import-export-markdown-to-docx"
         ]
       }
     ],
