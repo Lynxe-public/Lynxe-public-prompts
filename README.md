@@ -4,9 +4,35 @@
 
 本项目包含了一系列展示系统核心功能的实用案例，涵盖了从基础查询到高级自动化工作流的各种应用场景。每个用例都提供了详细的中英文说明文档，帮助用户快速理解和掌握系统的使用方法。
 
+## 🚀 快速启动
+
+### 1. 下载源码
+下载最新版本的 JAR 文件：访问 [Lynxe Releases 页面](https://github.com/spring-ai-alibaba/Lynxe/releases) 下载最新版本的 `lynxe.jar` 文件。
+
+### 2. 输入 SK
+访问 [阿里云百炼控制台](https://bailian.console.aliyun.com/?tab=model#/api-key)，在密钥管理页面创建 API Key 并复制密钥。运行 JAR 文件后，在浏览器中访问 `http://localhost:18080`，在引导页面输入您的 DashScope API 密钥完成配置。新用户可享受 100万Token 输入和 100万Token 输出的免费额度（有效期90天）。
+
+### 3. 导入 Script
+在系统中导入 [prompt-script](../prompt-script/) 目录下的 JSON 配置文件，系统会自动识别并加载模板配置。
+
+### 4. 使用
+在聊天对话框中选择对应的功能服务，即可开始使用各种 Func-Agent 功能。
+
 ## 用例概览
 
 ### ⭐ 高频Func-Agent推荐
+
+#### 翻译与语法纠正
+- **文件位置**: [chn/translation-grammar.md](chn/translation-grammar.md) | [eng/translation-grammar.md](eng/translation-grammar.md)
+- **推荐理由**: 日常工作中作者最常用的功能之一，可以快速翻译中文到英文，并纠正英文语法和拼写错误，帮助提升英语表达能力
+- **功能描述**: 智能翻译和语法纠正工具，支持中文翻译为英文，以及英文语法错误和拼写错误的自动纠正，并提供详细的语法解释和更地道的英语表达建议
+- **核心特性**: 
+  - 中英文双向翻译：自动识别输入语言并执行相应操作
+  - 语法错误纠正：自动检测并纠正英文语法和拼写错误
+  - 详细语法解释：解释各类从句、主系表、补语等语法结构
+  - 地道表达建议：提供更自然、更地道的英语表达方式
+  - 在对话中直接使用，操作简单便捷
+- **适用场景**: 日常英语学习、文档翻译、邮件写作、语法检查、英语表达提升
 
 #### Bing搜索问答
 - **文件位置**: [chn/bing-search.md](chn/bing-search.md) | [eng/bing-search.md](eng/bing-search.md)
@@ -103,41 +129,6 @@
   - 图片插入：自动将生成的图片插入到Markdown文档的指定位置
   - 多步骤协调：通过单一函数调用完成多个步骤的自动化执行
 - **适用场景**: 内容创作、文档生成、图文混排、格式转换
-
-## 技术架构
-
-### 核心组件
-- **Func-Agent模式**: 系统的主要工作模式，支持复杂任务规划和执行
-- **工具集成**: 内置browser_use工具和外部MCP服务集成
-- **函数组合**: 支持将复杂任务分解为可复用的工具函数
-- **状态管理**: 支持浏览器会话和登录状态的持久化
-
-## 文件结构
-
-```
-public-usecase/
-├── README.md                    # 项目总览（本文件）
-├── README_EN.md                # 英文版项目总览
-├── chn/                        # 中文版用例文档
-│   ├── stock-price-query.md    # 股票价格查询
-│   ├── form-input-demo.md     # 表单输入演示
-│   ├── query-plan.md          # 函数化Agent
-│   ├── image-pdf-recognition.md # 图片和PDF识别
-│   ├── ai-novel.md           # AI小说
-│   ├── bing-search.md        # Bing搜索问答
-│   ├── func-agent-example.md # 函数化Agent示例
-│   ├── image-word-gen.md    # 图文生成与Word导出
-│   └── xiaohongshu-scraper.md # 小红书搜索抓取
-└── eng/                       # 英文版用例文档
-    ├── stock-price-query.md   # Stock Price Query
-    ├── form-input-demo.md    # Form Input Demo
-    ├── query-plan.md         # Functional Agent
-    ├── image-pdf-recognition.md # Image and PDF Recognition
-    ├── ai-novel.md          # AI Novel
-    ├── bing-search.md       # Bing Search Q&A
-    ├── func-agent-example.md # Function-Agent Example
-    └── xiaohongshu-scraper.md # Xiaohongshu Search Scraping
-```
 
 ## 贡献指南
 

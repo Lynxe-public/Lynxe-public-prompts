@@ -1,0 +1,41 @@
+[
+  {
+    "title": "翻译并纠正我的语法错误",
+    "steps": [
+      {
+        "stepRequirement": "已知输入（输入被【】包裹）： 【<<用户输入>>】\n\n\n如果该输入是英文的，就纠正这句的英文语法错误和拼写错误。\n然后把所有错误在单列一次。\n\n如果该输入是中文的，就翻译为英文\n\n格式例子：\n\n## 正确的英文整句输出\n值\n\n## 需要纠正的内容\n值（表格形式，用户的输入，正确的英文说法）\n\n## 解释说明\n值：解释一下里面的各类从句的 语法， 主系表 补语等\n\n## 更优的英语表达\n值：用更地道的英语表达原意，用来帮助我更好的提高我表达的地道性\n\n要求：\n通过terminate工具结束当前任务并输出,关键内容请直接输出到message里面。",
+        "agentName": "",
+        "modelName": "",
+        "terminateColumns": "",
+        "selectedToolKeys": [
+          "default-terminate"
+        ]
+      }
+    ],
+    "planType": "dynamic_agent",
+    "serviceGroup": "日常工作",
+    "maxSteps": null,
+    "toolConfig": {
+      "toolDescription": "翻译并纠正我的语法错误",
+      "enableInternalToolcall": true,
+      "enableHttpService": false,
+      "enableInConversation": true,
+      "publishStatus": "PUBLISHED",
+      "inputSchema": [
+        {
+          "name": "用户输入",
+          "description": "Parameter: 用户输入",
+          "type": "string",
+          "required": true
+        }
+      ]
+    },
+    "createTime": "2025-12-29T15:09:56.211542",
+    "updateTime": "2026-01-06T14:48:40.399377",
+    "version": "4.10.4",
+    "planTemplateId": "planTemplate-1764813251717",
+    "accessLevel": "editable",
+    "readOnly": false
+  }
+]
+

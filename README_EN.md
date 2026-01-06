@@ -4,9 +4,35 @@
 
 This project contains a collection of practical use cases that demonstrate the core functionality of the system, covering various application scenarios from basic queries to advanced automated workflows. Each use case provides detailed documentation in both Chinese and English to help users quickly understand and master the system's usage methods.
 
+## 🚀 Quick Start
+
+### 1. Download Source Code
+Download the latest JAR file: Visit the [Lynxe Releases page](https://github.com/spring-ai-alibaba/Lynxe/releases) to download the latest `lynxe.jar` file.
+
+### 2. Enter SK
+Visit the [Alibaba Cloud Bailian Console](https://bailian.console.aliyun.com/?tab=model#/api-key), create an API Key in the Key Management page and copy the key. After running the JAR file, access `http://localhost:18080` in your browser and enter your DashScope API key on the setup page to complete configuration. New users can enjoy 1 million tokens of input and 1 million tokens of output free quota (valid for 90 days).
+
+### 3. Import Script
+Import the JSON configuration files from the [prompt-script](../prompt-script/) directory into the system, and the system will automatically recognize and load the template configurations.
+
+### 4. Use
+Select the corresponding functional service in the chat dialog to start using various Func-Agent features.
+
 ## Use Cases Overview
 
 ### ⭐ Highly Recommended Func-Agent
+
+#### Translation and Grammar Correction
+- **File Location**: [chn/translation-grammar.md](chn/translation-grammar.md) | [eng/translation-grammar.md](eng/translation-grammar.md)
+- **Why Recommended**: A highly practical tool for daily work, capable of quickly translating Chinese to English and correcting English grammar and spelling errors, helping improve English expression skills
+- **Description**: Intelligent translation and grammar correction tool that supports translating Chinese to English, automatically correcting English grammar and spelling errors, and providing detailed grammar explanations and more natural English expression suggestions
+- **Key Features**: 
+  - Bidirectional translation: Automatically identifies input language and performs corresponding operations
+  - Grammar error correction: Automatically detects and corrects English grammar and spelling errors
+  - Detailed grammar explanations: Explains various grammatical structures such as clauses, subject-verb-object, complements, etc.
+  - Natural expression suggestions: Provides more natural and idiomatic English expressions
+  - Direct use in conversation, simple and convenient operation
+- **Use Cases**: Daily English learning, document translation, email writing, grammar checking, English expression improvement
 
 #### Bing Search Q&A
 - **File Location**: [chn/bing-search.md](chn/bing-search.md) | [eng/bing-search.md](eng/bing-search.md)
@@ -103,41 +129,6 @@ This project contains a collection of practical use cases that demonstrate the c
   - Image insertion: Automatically insert generated images into specified positions in Markdown documents
   - Multi-step coordination: Complete multiple steps of automated execution through a single function call
 - **Use Cases**: Content creation, document generation, image-text layout, format conversion
-
-## Technical Architecture
-
-### Core Components
-- **Func-Agent Mode**: The system's main working mode, supporting complex task planning and execution
-- **Tool Integration**: Built-in browser_use tools and external MCP service integration
-- **Function Composition**: Support for decomposing complex tasks into reusable tool functions
-- **State Management**: Support for browser session and login state persistence
-
-## File Structure
-
-```
-public-usecase/
-├── README.md                    # Project overview (Chinese)
-├── README_EN.md                # Project overview (English)
-├── chn/                        # Chinese version use case docs
-│   ├── stock-price-query.md    # Stock Price Query
-│   ├── form-input-demo.md     # Form Input Demo
-│   ├── query-plan.md          # Functional Agent
-│   ├── image-pdf-recognition.md # Image and PDF Recognition
-│   ├── ai-novel.md           # AI Novel
-│   ├── bing-search.md        # Bing Search Q&A
-│   ├── func-agent-example.md # Function-Agent Example
-│   └── xiaohongshu-scraper.md # Xiaohongshu Search Scraping
-└── eng/                       # English version use case docs
-    ├── stock-price-query.md   # Stock Price Query
-    ├── form-input-demo.md    # Form Input Demo
-    ├── query-plan.md         # Functional Agent
-    ├── image-pdf-recognition.md # Image and PDF Recognition
-    ├── ai-novel.md          # AI Novel
-    ├── bing-search.md       # Bing Search Q&A
-    ├── func-agent-example.md # Function-Agent Example
-    ├── image-word-gen.md   # Image and Word Generation
-    └── xiaohongshu-scraper.md # Xiaohongshu Search Scraping
-```
 
 ## Contributing
 
