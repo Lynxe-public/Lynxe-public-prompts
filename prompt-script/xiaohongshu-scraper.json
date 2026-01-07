@@ -9,7 +9,7 @@
         "terminateColumns": "",
         "selectedToolKeys": [
           "db-service-get-table-meta",
-          "db-service-database-write-use",
+          "db-service-execute-write-sql",
           "db-service-execute-read-sql"
         ]
       }
