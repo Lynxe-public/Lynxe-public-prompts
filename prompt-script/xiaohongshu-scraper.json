@@ -93,7 +93,7 @@
           "bw-new-tab-browser",
           "bw-switch-tab-browser",
           "parallel-register-batch-execution",
-          "parallel-start-parallel-execution",
+          "parallel-start-parallel",
           "fs-grep-files",
           "fs-read-file-operator",
           "网站关键信息爬取-私有put一个链接的内容到database"
