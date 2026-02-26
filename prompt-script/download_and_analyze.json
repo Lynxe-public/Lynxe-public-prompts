@@ -1,0 +1,41 @@
+[
+  {
+    "title": "下载pdf并分析",
+    "steps": [
+      {
+        "stepRequirement": "1 打开 https://www.efunds.com.cn/fund/110022.shtml\n\n2 下载  产品公告 下面的  易方达消费行业股票型证券投资基金更新的招募说明书\n\n3 解析该文档，从中找到里面的 基金成本部分",
+        "agentName": "",
+        "terminateColumns": "",
+        "selectedToolKeys": [
+          "bw-click-browser",
+          "bw-close-tab-browser",
+          "bw-navigate-browser",
+          "bw-key-enter-browser",
+          "bw-upload-file-via-input-external-link",
+          "bw-upload-file-via-chooser-external-link-browser",
+          "bw-download-browser",
+          "import-export-markdown-converter",
+          "fs-read-file-operator",
+          "fs-grep-files"
+        ]
+      }
+    ],
+    "planType": "dynamic_agent",
+    "serviceGroup": "下载文档",
+    "maxSteps": null,
+    "toolConfig": {
+      "toolDescription": "下载文档1",
+      "enableInternalToolcall": true,
+      "enableHttpService": false,
+      "enableInConversation": false,
+      "publishStatus": "PUBLISHED",
+      "inputSchema": []
+    },
+    "createTime": "2026-02-13T13:49:02.757219",
+    "updateTime": "2026-02-26T21:31:42.084989",
+    "version": "4.10.8",
+    "planTemplateId": "planTemplate-1770961742746",
+    "accessLevel": "editable",
+    "readOnly": false
+  }
+]
