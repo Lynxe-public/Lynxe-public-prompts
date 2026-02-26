@@ -72,16 +72,16 @@ Select the corresponding functional service in the chat dialog to start using va
 
 #### 3. Image and PDF Recognition
 - **File Location**: [chn/image-pdf-recognition.md](chn/image-pdf-recognition.md) | [eng/image-pdf-recognition.md](eng/image-pdf-recognition.md)
-- **Why Recommended**: A core example demonstrating image and PDF recognition functionality, supporting batch recognition and structured output, as well as HTTP API calls
-- **Description**: Demonstrates image and PDF recognition functionality, supporting batch recognition and structured output, as well as HTTP API calls
+- **Why Recommended**: A core example demonstrating downloading PDF from websites and parsing documents; import the plan template to use with a simple workflow
+- **Description**: Demonstrates PDF download and document parsing capabilities—downloading PDF documents from websites via browser automation and extracting structured information using document parsing tools
 - **Key Features**:
-  - Document parsing and OCR technology
+  - Browser automation: web navigation, clicking, file downloading
+  - Document parsing and conversion technology (markdown_converter)
+  - File system operations (reading, searching)
   - Structured data extraction
-  - HTTP service publishing and calling
-  - File upload and batch processing
-  - Asynchronous task execution
-  - JSON format standardized output
-- **Use Cases**: Document processing, content extraction, batch recognition, API services
+  - Dynamic agent mode (dynamic_agent)
+  - Import plan template and use (download_and_analyze.json)
+- **Use Cases**: Document downloading, document parsing, content extraction, structured information extraction (e.g. fund announcements)
 
 #### 4. Long Content Output Demo
 - **File Location**: [chn/ai-novel.md](chn/ai-novel.md) | [eng/ai-novel.md](eng/ai-novel.md)
