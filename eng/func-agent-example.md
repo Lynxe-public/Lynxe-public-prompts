@@ -2,11 +2,20 @@
 
 ## Function Description
 
-This is an example that demonstrates the Function-Agent design philosophy, showing how to implement intelligent problem classification and expert systems through function composition and routing mechanisms.
+**The core of Func-Agent is defining an Agent in the form of a function.** A Func-Agent can be described as four parts:
 
-You can learn from this how to create multiple specialized Agent functions, how to implement function composition and calls, and how to route problems to appropriate experts through a routing Agent.
+- **Function name**: Unique identifier for invocation and routing.
+- **Structured parameter schema**: Inputs are described as JSON (e.g. param1, param2, param3), not free-form natural language.
+- **Function body**: A textual description of the task to perform, executed by the Agent; the body may call other Func-Agents.
+- **Structured return value**: Results are returned in JSON or similar form for downstream systems or other Agents.
 
-In this example, the technical expert, database expert, and business expert correspond to three sub-agents. They have completely independent memory resources and can be used in parallel. This is the best practice we have found for using sub-agents.
+For example, "Technical Expert Problem Handling" in this demo: the function name is that label; input might be `{"question": "How do I optimize this SQL?"}`; the body is described as "Answer the user's technical question with expertise" and is executed by the Agent; the return is structured answer content for the router or a ticket system.
+
+In other words, the Agent gets a "function-style label" so it can be invoked in a structured, non–natural-language way, improving accuracy for system integration and Agent-to-Agent collaboration.
+
+**Two direct benefits:** First, any existing system’s requests can be turned into JSON, so integration is straightforward. Second, with structured inputs and outputs, the information passed between Agents during collaboration is more precise, avoiding call errors caused by natural-language ambiguity.
+
+This example shows how to build an intelligent problem classifier and expert system using function composition and routing. You will see how to create multiple specialized Agent functions, compose and call them, and route questions to the right expert via a routing Agent. The technical expert, database expert, and business expert here are three sub-agents with independent memory that can run in parallel—our recommended way to use sub-agents.
 
 ## Usage Process
 
